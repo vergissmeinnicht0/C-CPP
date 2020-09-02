@@ -1,60 +1,60 @@
-/* Code£ºOriginalCoder 
-   Debug£ºOriginalCoder 
-   Éè¼ÆºÍºóÆÚ¿ª·¢£ºOriginalCoder 
-   Ö§³Ö£ºÈí¼şB1801°à */
+/* Codeï¼šOriginalCoder 
+   Debugï¼šOriginalCoder 
+   è®¾è®¡å’ŒåæœŸå¼€å‘ï¼šOriginalCoder 
+   æ”¯æŒï¼šè½¯ä»¶B1801ç­ */
                              
-							   /* ¿ª·¢ÕßÇ°ÑÔ */
+							   /* å¼€å‘è€…å‰è¨€ */
 
-/* ¸ÃÍ¼Êé¹ÜÀíÏµÍ³V1.0ÊÇÎäºº´«Ã½Ñ§Ôº´«Ã½¼¼ÊõÑ§ÔºÈí¼şB1801°àOriginalCoderÔ­´´,¿ÉÒÔËæÒâÊ¹ÓÃÔ´Âë,
-   µ«ÖÁÉÙÊğÏÂÎÒµÄÃû×Ö×ğÖØÒ»ÏÂÎÒµÄÔ­´´,Ğ»Ğ»Àí½â!!! */
-/* Èç¹ûÄã·¢ÏÖÁË´úÂëÔËĞĞ¹ı³ÌÖĞµÄbug»òÕßerror,ÇëÁªÏµÎÒ,ÎÒµÄÓÊÏäÊÇoriginal9@foxmail.com */
-/* Ê¹ÓÃÖ¸ÄÏ: ¿ª·¢ÕßÒ²¾ÍÊÇ°³,²¹³äÁË³ÌĞòÔ³ÊÖ²áºÍÓÃ»§ÊÖ²á,¸ù¾İ×Ô¼ºĞèÒª,¿É×ÔĞĞÔÚÎÄ¼ş¼ĞÖĞ·­¿´,ÕâÀïÖ»×ö¸öĞ¡Êö.
-   ¸ÃÏµÍ³Ö÷Ìå·ÖÎª2¸ö·½Ãæ,ÓÃ»§½çÃæºÍ¹ÜÀíÔ±½çÃæ,·Ö±ğ¶ÔÓ¦¿ª·¢Í¼Êé¹ÜÀí¹¦ÄÜ,Ê¹ÓÃÕß¿É×ÔĞĞÌåÑé¹¦ÄÜ.ÁíÍâ,
-   ½øÈë¹ÜÀíÔ±½çÃæ,ĞèÒªµÄÃÜÂëÊÇ 123456 £¬¿ÉÒÔ×ÔĞĞĞŞ¸Ä*/
+/* è¯¥å›¾ä¹¦ç®¡ç†ç³»ç»ŸV1.0æ˜¯æ­¦æ±‰ä¼ åª’å­¦é™¢ä¼ åª’æŠ€æœ¯å­¦é™¢è½¯ä»¶B1801ç­OriginalCoderåŸåˆ›,å¯ä»¥éšæ„ä½¿ç”¨æºç ,
+   ä½†è‡³å°‘ç½²ä¸‹æˆ‘çš„åå­—å°Šé‡ä¸€ä¸‹æˆ‘çš„åŸåˆ›,è°¢è°¢ç†è§£!!! */
+/* å¦‚æœä½ å‘ç°äº†ä»£ç è¿è¡Œè¿‡ç¨‹ä¸­çš„bugæˆ–è€…error,è¯·è”ç³»æˆ‘,æˆ‘çš„é‚®ç®±æ˜¯original9@foxmail.com */
+/* ä½¿ç”¨æŒ‡å—: å¼€å‘è€…ä¹Ÿå°±æ˜¯ä¿º,è¡¥å……äº†ç¨‹åºçŒ¿æ‰‹å†Œå’Œç”¨æˆ·æ‰‹å†Œ,æ ¹æ®è‡ªå·±éœ€è¦,å¯è‡ªè¡Œåœ¨æ–‡ä»¶å¤¹ä¸­ç¿»çœ‹,è¿™é‡Œåªåšä¸ªå°è¿°.
+   è¯¥ç³»ç»Ÿä¸»ä½“åˆ†ä¸º2ä¸ªæ–¹é¢,ç”¨æˆ·ç•Œé¢å’Œç®¡ç†å‘˜ç•Œé¢,åˆ†åˆ«å¯¹åº”å¼€å‘å›¾ä¹¦ç®¡ç†åŠŸèƒ½,ä½¿ç”¨è€…å¯è‡ªè¡Œä½“éªŒåŠŸèƒ½.å¦å¤–,
+   è¿›å…¥ç®¡ç†å‘˜ç•Œé¢,éœ€è¦çš„å¯†ç æ˜¯ 123456 ï¼Œå¯ä»¥è‡ªè¡Œä¿®æ”¹*/
 
-                               /* ×¢ÒâÊÂÏî */
-/* ÇëÔÚÊ¹ÓÃÖ®Ç°¿´Ò»ÏÂ,ÒòÎªV1.0°æ±¾×öµÄÊµÔÚ²Ö´Ù,ÓÖ¿ª·¢ÁËÒ»Ğ©²»Ì«ÊìÏ¤µÄÈË»ú½»»¥,ÍûÀí½â */
-/* 1.ÓÉÓÚ¿ª·¢Õß¿ª·¢Ê±ÒıÈëÊ±ÖÓ¿âÍ·ÎÄ¼şÄ£ÄâÏµÍ³ÔØÈë×´Ì¬,ËùÒÔÓöµ½"ÊäÈë´íÎó,ÇëÊäÈë....",
-     ²»Òª×Å¼±,ÄÍĞÄµÈ´ı×ÖÌõ´ÓÆÁÄ»ÒşÈ¥ºóÔÙ½øĞĞÊäÈë,ÒÔÃâ·´¸´±¨´í */
-/* 2.¿ª·¢ÕßÎªÌåÏÖÈË»ú½»»¥,Ê¹ÓÃgetch()Ò»Àà²»»ØÏÔµÄº¯Êı,À´»Ø±ÜÊäÈëÍê³ÉºóµÄ»Ø³µ¼ü,
-     ÒÔÔöÇ¿ÓÃ»§ÌåÑé,ËùÒÔÇë´ó¼Ò²»±ØÇÃ»÷»Ø³µ¼ü */
-/* 3.V1.0ÏµÍ³µÄ¿ª·¢Ô´ÂëÒ»Ç§¶àĞĞ£»ÓĞµãÓ·Ö×£¬¼ûÁÂ£¡ */
+                               /* æ³¨æ„äº‹é¡¹ */
+/* è¯·åœ¨ä½¿ç”¨ä¹‹å‰çœ‹ä¸€ä¸‹,å› ä¸ºV1.0ç‰ˆæœ¬åšçš„å®åœ¨ä»“ä¿ƒ,åˆå¼€å‘äº†ä¸€äº›ä¸å¤ªç†Ÿæ‚‰çš„äººæœºäº¤äº’,æœ›ç†è§£ */
+/* 1.ç”±äºå¼€å‘è€…å¼€å‘æ—¶å¼•å…¥æ—¶é’Ÿåº“å¤´æ–‡ä»¶æ¨¡æ‹Ÿç³»ç»Ÿè½½å…¥çŠ¶æ€,æ‰€ä»¥é‡åˆ°"è¾“å…¥é”™è¯¯,è¯·è¾“å…¥....",
+     ä¸è¦ç€æ€¥,è€å¿ƒç­‰å¾…å­—æ¡ä»å±å¹•éšå»åå†è¿›è¡Œè¾“å…¥,ä»¥å…åå¤æŠ¥é”™ */
+/* 2.å¼€å‘è€…ä¸ºä½“ç°äººæœºäº¤äº’,ä½¿ç”¨getch()ä¸€ç±»ä¸å›æ˜¾çš„å‡½æ•°,æ¥å›é¿è¾“å…¥å®Œæˆåçš„å›è½¦é”®,
+     ä»¥å¢å¼ºç”¨æˆ·ä½“éªŒ,æ‰€ä»¥è¯·å¤§å®¶ä¸å¿…æ•²å‡»å›è½¦é”® */
+/* 3.V1.0ç³»ç»Ÿçš„å¼€å‘æºç ä¸€åƒå¤šè¡Œï¼›æœ‰ç‚¹è‡ƒè‚¿ï¼Œè§è°…ï¼ */
 
-/*Í·ÎÄ¼şÇø*/
+/*å¤´æ–‡ä»¶åŒº*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
 #include <conio.h>
 
-/*ºê¶¨ÒåÇø*/ 
-#define  ADMIN_password "123456" /*¹ÜÀíÔ±µÇÂ¼ÃÜÂë*/
+/*å®å®šä¹‰åŒº*/ 
+#define  ADMIN_password "123456" /*ç®¡ç†å‘˜ç™»å½•å¯†ç */
 
-/*½á¹¹ÌåÉùÃ÷Çø*/
-typedef struct bookinfo/*ÏµÍ³Í¼ÊéĞÅÏ¢ */ 
+/*ç»“æ„ä½“å£°æ˜åŒº*/
+typedef struct bookinfo/*ç³»ç»Ÿå›¾ä¹¦ä¿¡æ¯ */ 
 {
-    char number[15];/*Í¼Êé±àºÅ*/
-    char name[30];/*Í¼ÊéÃû³Æ*/
-    char author[20];/*×÷Õß*/
-    char press[30];/*³ö°æÉç*/ 
-    char category[20]; /*Àà±ğ*/ 
-    float price;/*µ¥¼Û*/ 
-    int  quantity;/*¹İ²ØÁ¿*/
- 	int  time;/*½èÊé´ÎÊı*/ 
+    char number[15];/*å›¾ä¹¦ç¼–å·*/
+    char name[30];/*å›¾ä¹¦åç§°*/
+    char author[20];/*ä½œè€…*/
+    char press[30];/*å‡ºç‰ˆç¤¾*/ 
+    char category[20]; /*ç±»åˆ«*/ 
+    float price;/*å•ä»·*/ 
+    int  quantity;/*é¦†è—é‡*/
+ 	int  time;/*å€Ÿä¹¦æ¬¡æ•°*/ 
 }BOOKINFO;
 
-typedef struct bookgrasp/*»áÔ±½è³öµÄÊé¼®ĞÅÏ¢*/ 
+typedef struct bookgrasp/*ä¼šå‘˜å€Ÿå‡ºçš„ä¹¦ç±ä¿¡æ¯*/ 
 {
-	char number[15];/*Í¼Êé±àºÅ*/
-    char name[30];/*Í¼ÊéÃû³Æ*/
-    char author[20];/*×÷Õß*/
-    char press[30];/*³ö°æÉç*/ 
-    char category[20]; /*Àà±ğ*/ 
-    float price;/*µ¥¼Û*/ 
- 	char account[30];/*½èÊéÕßID*/
+	char number[15];/*å›¾ä¹¦ç¼–å·*/
+    char name[30];/*å›¾ä¹¦åç§°*/
+    char author[20];/*ä½œè€…*/
+    char press[30];/*å‡ºç‰ˆç¤¾*/ 
+    char category[20]; /*ç±»åˆ«*/ 
+    float price;/*å•ä»·*/ 
+ 	char account[30];/*å€Ÿä¹¦è€…ID*/
 }BOOKGRASP;
 
-typedef struct member/*»áÔ±¸öÈËĞÅÏ¢ */ 
+typedef struct member/*ä¼šå‘˜ä¸ªäººä¿¡æ¯ */ 
 { 
 	char name[30];
 	char ID[20];
@@ -63,58 +63,58 @@ typedef struct member/*»áÔ±¸öÈËĞÅÏ¢ */
 	char password_key[30];
 }MEMBER; 
 
-/*²Ëµ¥º¯ÊıÇø*/
+/*èœå•å‡½æ•°åŒº*/
 void menu1();
 void menu2();
 void menu3();
 void AboutMe();
 
-/*¹¤¾ßº¯ÊıÇø*/
-int compare_password(char password[20]);/*ÃÜÂë±È¶Ôº¯Êı */  
-void clock_delay(); /*Ê±¼äÑÓÊ±º¯Êı*/ 
-void password_circle();/*ÃÜÂë¿ò×°ÊÎº¯Êı*/
-void find_account_circle();/*ÕÒ»ØÕÊ»§µ¯³ö¿òº¯Êı*/ 
+/*å·¥å…·å‡½æ•°åŒº*/
+int compare_password(char password[20]);/*å¯†ç æ¯”å¯¹å‡½æ•° */  
+void clock_delay(); /*æ—¶é—´å»¶æ—¶å‡½æ•°*/ 
+void password_circle();/*å¯†ç æ¡†è£…é¥°å‡½æ•°*/
+void find_account_circle();/*æ‰¾å›å¸æˆ·å¼¹å‡ºæ¡†å‡½æ•°*/ 
 
-/*»áÔ±ĞÅÏ¢ÏµÍ³²ã¼¶º¯ÊıÇø*/
-int user_account(char account[20]);/*¸öÈËÕË»§ĞÅÏ¢*/ 
-void member_log_up();/*»áÔ±×¢²áº¯Êı*/
-int member_log_in(char account[20]);/*»áÔ±µÇÂ¼º¯Êı*/ 
-void ADMIN_watch_member();/*²é¿´»áÔ±ĞÅÏ¢º¯Êı*/
-void display_memberbook();/*²é¿´ËùÓĞÍ¼Êé½èÔÄĞÅÏ¢º¯Êı*/
-int check_repeat_ID(char id_account[20]);/*¼ì²éÕË»§ÖØ¸´ĞÔº¯Êı*/ 
-void find_account();/*ÕË»§ÕÒ»Øº¯Êı*/ 
+/*ä¼šå‘˜ä¿¡æ¯ç³»ç»Ÿå±‚çº§å‡½æ•°åŒº*/
+int user_account(char account[20]);/*ä¸ªäººè´¦æˆ·ä¿¡æ¯*/ 
+void member_log_up();/*ä¼šå‘˜æ³¨å†Œå‡½æ•°*/
+int member_log_in(char account[20]);/*ä¼šå‘˜ç™»å½•å‡½æ•°*/ 
+void ADMIN_watch_member();/*æŸ¥çœ‹ä¼šå‘˜ä¿¡æ¯å‡½æ•°*/
+void display_memberbook();/*æŸ¥çœ‹æ‰€æœ‰å›¾ä¹¦å€Ÿé˜…ä¿¡æ¯å‡½æ•°*/
+int check_repeat_ID(char id_account[20]);/*æ£€æŸ¥è´¦æˆ·é‡å¤æ€§å‡½æ•°*/ 
+void find_account();/*è´¦æˆ·æ‰¾å›å‡½æ•°*/ 
 
-/*Í¼ÊéĞÅÏ¢ÏµÍ³²ã¼¶º¯ÊıÇø*/
-void add_book();/*ÊäÈëĞÂ½øµÄÍ¼ÊéĞÅÏ¢*/
-void delete_book();/*¸ù¾İÍ¼ÊéÃû³Æ¶ÔÍ¼ÊéĞÅÏ¢½øĞĞÉ¾³ı*/
-void modify_book();/*ĞŞ¸ÄÍ¼ÊéĞÅÏ¢*/
-void display_book();/*ÏÔÊ¾È«²¿Í¼ÊéĞÅÏ¢*/
-void search_book();/*¸ù¾İÍ¼ÊéÃû³ÆÏÔÊ¾Í¼ÊéµÄĞÅÏ¢*/
-void borrow_book(char account[20]);/*½èÊé*/
-void return_book(char account[20]);/*»¹Êé*/
-void display_price_lower();/*¸ù¾İ¼Û¸ñÁĞ³öÍ¼ÊéĞÅÏ¢*/
-void dispaly_popular();/*Í¼ÊéÊÜ»¶Ó­¶ÈÅÅĞĞ°ñ*/
-int check_repeat_book(char number[30]);/*²éÖØÊé¼®±àºÅ*/
+/*å›¾ä¹¦ä¿¡æ¯ç³»ç»Ÿå±‚çº§å‡½æ•°åŒº*/
+void add_book();/*è¾“å…¥æ–°è¿›çš„å›¾ä¹¦ä¿¡æ¯*/
+void delete_book();/*æ ¹æ®å›¾ä¹¦åç§°å¯¹å›¾ä¹¦ä¿¡æ¯è¿›è¡Œåˆ é™¤*/
+void modify_book();/*ä¿®æ”¹å›¾ä¹¦ä¿¡æ¯*/
+void display_book();/*æ˜¾ç¤ºå…¨éƒ¨å›¾ä¹¦ä¿¡æ¯*/
+void search_book();/*æ ¹æ®å›¾ä¹¦åç§°æ˜¾ç¤ºå›¾ä¹¦çš„ä¿¡æ¯*/
+void borrow_book(char account[20]);/*å€Ÿä¹¦*/
+void return_book(char account[20]);/*è¿˜ä¹¦*/
+void display_price_lower();/*æ ¹æ®ä»·æ ¼åˆ—å‡ºå›¾ä¹¦ä¿¡æ¯*/
+void dispaly_popular();/*å›¾ä¹¦å—æ¬¢è¿åº¦æ’è¡Œæ¦œ*/
+int check_repeat_book(char number[30]);/*æŸ¥é‡ä¹¦ç±ç¼–å·*/
 
 int main()
 {
-	int flag1=1,flag2=1,flag3=1;/* flagÊÇÅĞ¶ÏÌõ¼ş,flagÎª 1 Ê±ÎªÕæ£¬Îª 0 Ê±Îª¼Ù */
+	int flag1=1,flag2=1,flag3=1;/* flagæ˜¯åˆ¤æ–­æ¡ä»¶,flagä¸º 1 æ—¶ä¸ºçœŸï¼Œä¸º 0 æ—¶ä¸ºå‡ */
 	char choice1,choice2,choice3;
 	FILE *p1,*p2,*p3;
 	
-	system("title Èí¼ş1801-OriginalCoder");
+	system("title è½¯ä»¶1801-OriginalCoder");
    
-    if((p1=fopen("library.txt","r"))==NULL)/*p1ÊÇÍ¼Êé¹ÜÀíÏµÍ³µÄÊé¼®ĞÅÏ¢ÎÄ¼şÖ¸Õë*/ 
+    if((p1=fopen("library.txt","r"))==NULL)/*p1æ˜¯å›¾ä¹¦ç®¡ç†ç³»ç»Ÿçš„ä¹¦ç±ä¿¡æ¯æ–‡ä»¶æŒ‡é’ˆ*/ 
     {
       	p1=fopen("library.txt","w");
       	fclose(p1);
     }
-	if((p2=fopen("infomember.txt","r"))==NULL)/*p2ÊÇÍ¼Êé¹ÜÀíÏµÍ³µÄ»áÔ±¸öÈËĞÅÏ¢ÎÄ¼şÖ¸Õë*/ 
+	if((p2=fopen("infomember.txt","r"))==NULL)/*p2æ˜¯å›¾ä¹¦ç®¡ç†ç³»ç»Ÿçš„ä¼šå‘˜ä¸ªäººä¿¡æ¯æ–‡ä»¶æŒ‡é’ˆ*/ 
 	{
 		p2=fopen("infomember.txt","w");
 		fclose(p2);
 	}
-	if( (p3=fopen("memberbook.txt","r"))==NULL)/*p3ÊÇÍ¼Êé¹ÜÀíÏµÍ³µÄ»áÔ±Êé¼®ĞÅÏ¢ÎÄ¼şÖ¸Õë*/ 
+	if( (p3=fopen("memberbook.txt","r"))==NULL)/*p3æ˜¯å›¾ä¹¦ç®¡ç†ç³»ç»Ÿçš„ä¼šå‘˜ä¹¦ç±ä¿¡æ¯æ–‡ä»¶æŒ‡é’ˆ*/ 
 	{
 		p3=fopen("memberbook.txt","w");
 		fclose(p3);
@@ -123,17 +123,17 @@ int main()
 	while(flag1)
 	{
 		system("cls");
-		menu1();/*µ÷³öÖ÷²Ëµ¥ */ 
+		menu1();/*è°ƒå‡ºä¸»èœå• */ 
 
   		printf("\n");
-  		printf("ÇëÄúÑ¡Ôñ(1-5):");
+  		printf("è¯·æ‚¨é€‰æ‹©(1-5):");
   		choice1=getch();
   		while(choice1!='1'&&choice1!='2'&&choice1!='3'&&choice1!='4'&&choice1!='5')
   			choice1=getch();
   		printf("%c",choice1);
   		fflush(stdin);
 
-  		if(choice1=='1')/*»áÔ±µÇÂ¼*/ 
+  		if(choice1=='1')/*ä¼šå‘˜ç™»å½•*/ 
 		{
 			int flag=0;
 			char account1[20],account_choice;
@@ -141,14 +141,14 @@ int main()
 			password_circle();
 			fflush(stdin);
 			gets(account1);
-			flag=member_log_in(account1);/*ÕË»§µÇÂ¼º¯Êı*/ 
+			flag=member_log_in(account1);/*è´¦æˆ·ç™»å½•å‡½æ•°*/ 
 			if(flag==2)
 			{
 				system("cls");
 				password_circle();
 				fflush(stdin);
 				gets(account1);
-				flag=member_log_in(account1);/*ÕË»§µÇÂ¼º¯Êı*/	
+				flag=member_log_in(account1);/*è´¦æˆ·ç™»å½•å‡½æ•°*/	
 			} 
 			if(flag==1)
 			{
@@ -156,7 +156,7 @@ int main()
     		system("cls");
 			menu2();
     		printf("\n");
-    		printf("ÇëÄúÑ¡Ôñ(1-8):");
+    		printf("è¯·æ‚¨é€‰æ‹©(1-8):");
     		choice2=getch();
     		while(choice2!='1'&&choice2!='2'&&choice2!='3'&&choice2!='4'&&choice2!='5'&&choice2!='6'&&choice2!='7'&&choice2!='8')
   				choice2=getch();
@@ -172,21 +172,21 @@ int main()
     			case '6':dispaly_popular();break; 
     			case '7':if(user_account(account1))
     						{
-								printf("\n\n\t\t\tµÇÂ¼ĞÅÏ¢¸Ä±ä£¬ÇëÖØĞÂµÇÂ¼...");
+								printf("\n\n\t\t\tç™»å½•ä¿¡æ¯æ”¹å˜ï¼Œè¯·é‡æ–°ç™»å½•...");
        		       	  	 		clock_delay();
        		       	  	 		flag3=0;
 							}
 						 break;
     			case '8':flag2=0;
-					     printf("\n\n\t\t\tÕıÔÚÍË³öÓÃ»§½çÃæ...");
+					     printf("\n\n\t\t\tæ­£åœ¨é€€å‡ºç”¨æˆ·ç•Œé¢...");
        		       	  	 clock_delay();
 						 break;
-				default:break;/*ËäÈ»Ñ¹¸ù²»»á¶Áµ½defaultÇé¿ö£¬µ«ÊÇÅÂºóÀ´¿ª·¢ÕßÂ©µôĞÂ¼ÓµÄcaseµÄwhile´¦Àí£¬ËùÒÔ¼ÓÉÏ*/
+				default:break;/*è™½ç„¶å‹æ ¹ä¸ä¼šè¯»åˆ°defaultæƒ…å†µï¼Œä½†æ˜¯æ€•åæ¥å¼€å‘è€…æ¼æ‰æ–°åŠ çš„caseçš„whileå¤„ç†ï¼Œæ‰€ä»¥åŠ ä¸Š*/
     				}
 				}
 			}else{
 				system("cls"); 
-				find_account_circle();/*×°ÊÎµ¯³ö¿òº¯Êı*/ 
+				find_account_circle();/*è£…é¥°å¼¹å‡ºæ¡†å‡½æ•°*/ 
 				fflush(stdin);
 				account_choice=getch();
 				while(account_choice!='Y'&&account_choice!='y'&&account_choice!='N'&&account_choice!='n')
@@ -194,30 +194,30 @@ int main()
       			printf("%c",account_choice);
 				printf("\n");
 				if(account_choice=='Y'||account_choice=='y')
-					find_account();/*ÕË»§ÕÒ»Øº¯Êı*/ 	
+					find_account();/*è´¦æˆ·æ‰¾å›å‡½æ•°*/ 	
 			}
 			flag2=1,flag3=1;
 		}
 	
-		else if(choice1=='2')/*»áÔ±×¢²á*/ 
+		else if(choice1=='2')/*ä¼šå‘˜æ³¨å†Œ*/ 
 		{
 			system("cls");
-			printf("\n\n\n\t\t\tÕıÔÚ½øÈëÓÃ»§×¢²á½çÃæ...");
+			printf("\n\n\n\t\t\tæ­£åœ¨è¿›å…¥ç”¨æˆ·æ³¨å†Œç•Œé¢...");
 			clock_delay();
      	   member_log_up();  
 		}
 	 
-		else if(choice1=='3')/*¹ÜÀíÔ±µÇÂ¼*/ 
+		else if(choice1=='3')/*ç®¡ç†å‘˜ç™»å½•*/ 
 		{
 			if(compare_password(ADMIN_password))
 			{
-				printf("\n\n\t\t\t\t  --ÊäÈëÃÜÂëÕıÈ·!--\n\n\t\t\t\t==ÕıÔÚ½øÈë¹ÜÀíÔ±½çÃæ==\n");
+				printf("\n\n\t\t\t\t  --è¾“å…¥å¯†ç æ­£ç¡®!--\n\n\t\t\t\t==æ­£åœ¨è¿›å…¥ç®¡ç†å‘˜ç•Œé¢==\n");
      	  	 	clock_delay(); 
 				while(flag2){
 				system("cls");
 				menu3();
 				printf("\n");
-				printf("ÇëÄúÑ¡Ôñ(1-8):");
+				printf("è¯·æ‚¨é€‰æ‹©(1-8):");
 				choice3=getch();
 				while(choice3!='1'&&choice3!='2'&&choice3!='3'&&choice3!='4'&&choice3!='5'&&choice3!='6'&&choice3!='7'&&choice3!='8')
   					choice3=getch();
@@ -233,33 +233,33 @@ int main()
    					case '6':ADMIN_watch_member();break; 
    					case '7':display_memberbook();break;
    					case '8':flag2=0;
-					     	 printf("\n\n\t\t\tÕıÔÚÍË³ö¹ÜÀíÔ±½çÃæ...");
+					     	 printf("\n\n\t\t\tæ­£åœ¨é€€å‡ºç®¡ç†å‘˜ç•Œé¢...");
          	     	  		 clock_delay();
 							 break;
-   					default:break;/*ËäÈ»Ñ¹¸ù²»»á¶Áµ½defaultÇé¿ö£¬µ«ÊÇÅÂºóÀ´¿ª·¢ÕßÂ©µôĞÂ¼ÓµÄcaseµÄwhile´¦Àí£¬ËùÒÔ¼ÓÉÏ*/
+   					default:break;/*è™½ç„¶å‹æ ¹ä¸ä¼šè¯»åˆ°defaultæƒ…å†µï¼Œä½†æ˜¯æ€•åæ¥å¼€å‘è€…æ¼æ‰æ–°åŠ çš„caseçš„whileå¤„ç†ï¼Œæ‰€ä»¥åŠ ä¸Š*/
    					}
   				}
   			} 
   			else{
-  				printf("\n\n\t\t\t\t  --ÊäÈëÃÜÂë´íÎó!--\n");
+  				printf("\n\n\t\t\t\t  --è¾“å…¥å¯†ç é”™è¯¯!--\n");
      		   	clock_delay();
 			}
 			flag2=1; 
  		}
  	
- 		else if(choice1=='4')/*¹ØÓÚcoder*/ 
+ 		else if(choice1=='4')/*å…³äºcoder*/ 
  		{
 			AboutMe();
 		}
 	
- 		else if(choice1=='5')/*ÍË³öÏµÍ³*/
+ 		else if(choice1=='5')/*é€€å‡ºç³»ç»Ÿ*/
  		{
  			flag1=0;
 		}
 	}
 	fflush(stdin);
 	system("cls");
-	printf("ÄãÒÑ¾­°²È«ÍË³öÏµÍ³!(°´ÈÎÒâ¼ü¹Ø±Õ½çÃæ)\n\n\t»¶Ó­ÄúµÄÔÙ´ÎÊ¹ÓÃ!\n\n\tÓÀÔ¶°®ÄãµÄFenrari!\n\n");
+	printf("ä½ å·²ç»å®‰å…¨é€€å‡ºç³»ç»Ÿ!(æŒ‰ä»»æ„é”®å…³é—­ç•Œé¢)\n\n\tæ¬¢è¿æ‚¨çš„å†æ¬¡ä½¿ç”¨!\n\n\tæ°¸è¿œçˆ±ä½ çš„Fenrari!\n\n");
 	getch();
 	return 0;
 }
@@ -271,15 +271,15 @@ void menu1()
 	printf("\t\t\t *=======================================*\n");
 	printf("\t\t\t|  * - * - * Crazy Coder - LIMS * - * - *  |\n");
 	printf("\t\t\t| *                                     * |\n");
-	printf("\t\t\t| |  [1]   »áÔ±µÇÂ¼                     | |\n");
+	printf("\t\t\t| |  [1]   ä¼šå‘˜ç™»å½•                     | |\n");
 	printf("\t\t\t| *                                     * |\n");
-	printf("\t\t\t| |  [2]   »áÔ±×¢²á                     | |\n");
+	printf("\t\t\t| |  [2]   ä¼šå‘˜æ³¨å†Œ                     | |\n");
 	printf("\t\t\t| *                                     * |\n");
-	printf("\t\t\t| |  [3]   ¹ÜÀíÔ±µÇÂ¼                   | |\n");
+	printf("\t\t\t| |  [3]   ç®¡ç†å‘˜ç™»å½•                   | |\n");
 	printf("\t\t\t| *                                     * |\n");
-	printf("\t\t\t| |  [4]   ¹ØÓÚ×îĞÂ°æ±¾                 | |\n");
+	printf("\t\t\t| |  [4]   å…³äºæœ€æ–°ç‰ˆæœ¬                 | |\n");
 	printf("\t\t\t| *                                     * |\n");
-	printf("\t\t\t| |  [5]   ÍË³öÏµÍ³                     | |\n");
+	printf("\t\t\t| |  [5]   é€€å‡ºç³»ç»Ÿ                     | |\n");
 	printf("\t\t\t| *                                     * |\n");
 	printf("\t\t\t|  * - * - * - * - * - * - * - * - * - *  |\n");
 	printf("\t\t\t *=======================================*\n");
@@ -289,16 +289,16 @@ void menu2()
 	system("color BC");
 	printf("\n\n");
 	printf("\t\t\t *=====================================*\n");
-    printf("\t\t\t| | * - * - * -»á-Ô±-½ç-Ãæ- * - * - * | |\n");
+    printf("\t\t\t| | * - * - * -ä¼š-å‘˜-ç•Œ-é¢- * - * - * | |\n");
     printf("\t\t\t| *                                   * |\n");
-    printf("\t\t\t| |  [1]   ²éÕÒÍ¼ÊéĞÅÏ¢               | |\n");
-    printf("\t\t\t| *  [2]   ½èÔÄÍ¼Êé                   * |\n");
-    printf("\t\t\t| |  [3]   ¹é»¹Í¼Êé                   | |\n");
-    printf("\t\t\t| *  [4]   Êé¿âËùÓĞÍ¼ÊéĞÅÏ¢           * |\n");
-    printf("\t\t\t| |  [5]   ¼ÛÎ»Êé¼®ÍÆ¼ö               | |\n");
-    printf("\t\t\t| *  [6]   Í¼ÊéÊÜ»¶Ó­¶ÈÅÅĞĞ°ñ         * |\n");
-    printf("\t\t\t| |  [7]   ÄúµÄÕË»§ĞÅÏ¢               | |\n");
-    printf("\t\t\t| *  [8]   ÍË³öÓÃ»§½çÃæ               * |\n");
+    printf("\t\t\t| |  [1]   æŸ¥æ‰¾å›¾ä¹¦ä¿¡æ¯               | |\n");
+    printf("\t\t\t| *  [2]   å€Ÿé˜…å›¾ä¹¦                   * |\n");
+    printf("\t\t\t| |  [3]   å½’è¿˜å›¾ä¹¦                   | |\n");
+    printf("\t\t\t| *  [4]   ä¹¦åº“æ‰€æœ‰å›¾ä¹¦ä¿¡æ¯           * |\n");
+    printf("\t\t\t| |  [5]   ä»·ä½ä¹¦ç±æ¨è               | |\n");
+    printf("\t\t\t| *  [6]   å›¾ä¹¦å—æ¬¢è¿åº¦æ’è¡Œæ¦œ         * |\n");
+    printf("\t\t\t| |  [7]   æ‚¨çš„è´¦æˆ·ä¿¡æ¯               | |\n");
+    printf("\t\t\t| *  [8]   é€€å‡ºç”¨æˆ·ç•Œé¢               * |\n");
     printf("\t\t\t| |                                   | |\n");
     printf("\t\t\t| * - * - * - * - * - * - * - * - * - * |\n");
 	printf("\t\t\t *=====================================*\n");
@@ -308,16 +308,16 @@ void menu3()
 	system("color 1D");
 	printf("\n\n");
 	printf("\t\t\t *======================================*\n");
-	printf("\t\t\t| | * - * - * ¹Ü-Àí-Ô±-½ç-Ãæ * - * - * | |\n");
+	printf("\t\t\t| | * - * - * ç®¡-ç†-å‘˜-ç•Œ-é¢ * - * - * | |\n");
 	printf("\t\t\t| *                                    * |\n");
-	printf("\t\t\t| |  [1]   Ìí¼ÓÍ¼Êé                    | |\n");
-	printf("\t\t\t| *  [2]   É¾¼õÍ¼Êé                    * |\n");
-	printf("\t\t\t| |  [3]   ĞŞ¸ÄÍ¼ÊéĞÅÏ¢                | |\n");
-	printf("\t\t\t| *  [4]   ²éÕÒÍ¼ÊéĞÅÏ¢                * |\n");
-	printf("\t\t\t| |  [5]   ÏÔÊ¾È«²¿Í¼ÊéĞÅÏ¢            | |\n");
-	printf("\t\t\t| *  [6]   ÏÔÊ¾ËùÓĞ»áÔ±ĞÅÏ¢            * |\n");
-	printf("\t\t\t| |  [7]   ÏÔÊ¾ËùÓĞ½èÔÄĞÅÏ¢            | |\n");
-	printf("\t\t\t| *  [8]   ÍË³ö¹ÜÀíÔ±½çÃæ              * |\n");
+	printf("\t\t\t| |  [1]   æ·»åŠ å›¾ä¹¦                    | |\n");
+	printf("\t\t\t| *  [2]   åˆ å‡å›¾ä¹¦                    * |\n");
+	printf("\t\t\t| |  [3]   ä¿®æ”¹å›¾ä¹¦ä¿¡æ¯                | |\n");
+	printf("\t\t\t| *  [4]   æŸ¥æ‰¾å›¾ä¹¦ä¿¡æ¯                * |\n");
+	printf("\t\t\t| |  [5]   æ˜¾ç¤ºå…¨éƒ¨å›¾ä¹¦ä¿¡æ¯            | |\n");
+	printf("\t\t\t| *  [6]   æ˜¾ç¤ºæ‰€æœ‰ä¼šå‘˜ä¿¡æ¯            * |\n");
+	printf("\t\t\t| |  [7]   æ˜¾ç¤ºæ‰€æœ‰å€Ÿé˜…ä¿¡æ¯            | |\n");
+	printf("\t\t\t| *  [8]   é€€å‡ºç®¡ç†å‘˜ç•Œé¢              * |\n");
 	printf("\t\t\t| |                                    | |\n");
 	printf("\t\t\t| * - * - * - * - * -- * - * - * - * - * |\n");
 	printf("\t\t\t *======================================*\n");
@@ -325,20 +325,20 @@ void menu3()
 void AboutMe()
 {
 	system("cls");
-	printf("Code:  fuujiro\n");
-	printf("Debug: fuujiro\n");
-	printf("\n\n\t\tÊ¹ÓÃ°ïÖúÇë²é¿´ÓÃ»§ÊÖ²á»ò³ÌĞòÔ³ÊÖ²á!");
+	printf("Code:  OriginalCoder\n");
+	printf("Debug: OriginalCoder\n");
+	printf("\n\n\t\tä½¿ç”¨å¸®åŠ©è¯·æŸ¥çœ‹ç”¨æˆ·æ‰‹å†Œæˆ–ç¨‹åºçŒ¿æ‰‹å†Œ!");
 	printf("\n\n");
  	printf(" ^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^**^*^*^*^*^*^*^*^*^\n");
-	printf(" | ¸ÃÍ¼Êé¹ÜÀíÏµÍ³¾­¹ı¼¸¾­ÖÜÕÛ,Ê±¼äÔ­ÒòµÈ,ÀïÃæ¿ÉÄÜ»áÓĞĞ©ÉµÉµµÄµØ·½»òÕßbug! |\n");
-	printf(" * Èç¹û´ó¼Ò·¢ÏÖÁË,Ò»¶¨ÒªÁªÏµÎÒÅ¶!ÎÒµÄÓÊÏäÊÇoriginal9@foxmail.com,±ÊĞ¾!!!  *\n");
+	printf(" | è¯¥å›¾ä¹¦ç®¡ç†ç³»ç»Ÿç»è¿‡å‡ ç»å‘¨æŠ˜,æ—¶é—´åŸå› ç­‰,é‡Œé¢å¯èƒ½ä¼šæœ‰äº›å‚»å‚»çš„åœ°æ–¹æˆ–è€…bug! |\n");
+	printf(" * å¦‚æœå¤§å®¶å‘ç°äº†,ä¸€å®šè¦è”ç³»æˆ‘å“¦!æˆ‘çš„é‚®ç®±æ˜¯original9@foxmail.com,ç¬”èŠ¯!!!  *\n");
 	printf(" |                                ^_^                                     |\n");
 	printf(" ^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^**^*^*^*^*^*^*^*^*^\n");
-	printf("\n\n°´ÈÎÒâ¼üÍË³ö.");
+	printf("\n\næŒ‰ä»»æ„é”®é€€å‡º.");
 	getch();
 }
 
-void add_book() /*ÊäÈëĞÂ½øµÄÍ¼ÊéĞÅÏ¢*/
+void add_book() /*è¾“å…¥æ–°è¿›çš„å›¾ä¹¦ä¿¡æ¯*/
 {
     char choice;
     FILE *p1;
@@ -349,40 +349,40 @@ void add_book() /*ÊäÈëĞÂ½øµÄÍ¼ÊéĞÅÏ¢*/
       	{
       	flag=0; 
       	fflush(stdin);
-		printf("ÇëÊäÈëÍ¼Êé±àºÅ:");
+		printf("è¯·è¾“å…¥å›¾ä¹¦ç¼–å·:");
 		gets(newbook.number);
 		
 		if(check_repeat_book(newbook.number))
 		{	
-			printf("¸ÃÍ¼Êé±àºÅÒÑ±»Ê¹ÓÃ£¡");
-			printf("\n°´ÈÎÒâ¼üÖØĞÂ×¢²á\n\n");
+			printf("è¯¥å›¾ä¹¦ç¼–å·å·²è¢«ä½¿ç”¨ï¼");
+			printf("\næŒ‰ä»»æ„é”®é‡æ–°æ³¨å†Œ\n\n");
 			getch();
 			flag=1; 
 		}
 		else{
 			fflush(stdin); 
-			printf("ÇëÊäÈëÊéÃû:");
+			printf("è¯·è¾“å…¥ä¹¦å:");
 			gets(newbook.name);
 		
-			printf("ÇëÊäÈë×÷Õß:");
+			printf("è¯·è¾“å…¥ä½œè€…:");
 			gets(newbook.author);
 		
-			printf("ÇëÊäÈë³ö°æÉç:");
+			printf("è¯·è¾“å…¥å‡ºç‰ˆç¤¾:");
 			gets(newbook.press);
 			
-			printf("ÇëÊäÈëÀà±ğ(ÎÄÑ§/¿ÆÑ§/ÀíÑ§/¹¤Ñ§/µÈ):");
+			printf("è¯·è¾“å…¥ç±»åˆ«(æ–‡å­¦/ç§‘å­¦/ç†å­¦/å·¥å­¦/ç­‰):");
 			gets(newbook.category);
 		
-			printf("ÇëÊäÈë¼Û¸ñ:");
+			printf("è¯·è¾“å…¥ä»·æ ¼:");
 			scanf("%f",&newbook.price);
 		
-			printf("ÇëÊäÈë¹İ²ØÁ¿:");
+			printf("è¯·è¾“å…¥é¦†è—é‡:");
 			scanf("%d",&newbook.quantity);
 		
-			printf("ÇëÊäÈë½èÔÄ´ÎÊı(ĞÂÊéÊäÈë0):");
+			printf("è¯·è¾“å…¥å€Ÿé˜…æ¬¡æ•°(æ–°ä¹¦è¾“å…¥0):");
 			scanf("%d",&newbook.time); 
 		fflush(stdin);
-      	printf("ÊÇ·ñ±£´æ¸ÃÌõÊéÄ¿(y/n):");
+      	printf("æ˜¯å¦ä¿å­˜è¯¥æ¡ä¹¦ç›®(y/n):");
       	choice=getch();
 		while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	    choice=getch();
@@ -394,13 +394,13 @@ void add_book() /*ÊäÈëĞÂ½øµÄÍ¼ÊéĞÅÏ¢*/
 					newbook.number,newbook.name,newbook.author,newbook.press,
 					newbook.category,newbook.price,newbook.quantity,newbook.time);
 	        fclose(p1);
-        	printf("\n¸ÃÌõÊéÄ¿ÒÑÌí¼Óµ½library.txtÎÄ¼şÖĞ!\n");
+        	printf("\nè¯¥æ¡ä¹¦ç›®å·²æ·»åŠ åˆ°library.txtæ–‡ä»¶ä¸­!\n");
        	}
         else
         {
-       		printf("\n±¾ÌõÊéÄ¿Î´±£´æ!\n");
+       		printf("\næœ¬æ¡ä¹¦ç›®æœªä¿å­˜!\n");
         }
-      	printf("\n\nÊÇ·ñ¼ÌĞøÌí¼ÓÊéÄ¿(y/n):");
+      	printf("\n\næ˜¯å¦ç»§ç»­æ·»åŠ ä¹¦ç›®(y/n):");
         choice=getch();
         while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	    choice=getch();
@@ -414,7 +414,7 @@ void add_book() /*ÊäÈëĞÂ½øµÄÍ¼ÊéĞÅÏ¢*/
       }
 }
 
-void display_book()/*ÏÔÊ¾È«²¿Í¼ÊéĞÅÏ¢*/
+void display_book()/*æ˜¾ç¤ºå…¨éƒ¨å›¾ä¹¦ä¿¡æ¯*/
 {
     FILE *p1;
     int n;
@@ -432,16 +432,16 @@ void display_book()/*ÏÔÊ¾È«²¿Í¼ÊéĞÅÏ¢*/
       	booknumber++;
     }
     fclose(p1);
-    printf("µ±Ç°Í¼Êé¹İÄÚÓĞ%dÄ¿Êé¼®\n\n",booknumber);
+    printf("å½“å‰å›¾ä¹¦é¦†å†…æœ‰%dç›®ä¹¦ç±\n\n",booknumber);
     if(bookinfo[0].quantity==0)
     {
-      	printf("\nÃ»ÓĞÈÎºÎÍ¼ÊéĞÅÏ¢!\n\n");
+      	printf("\næ²¡æœ‰ä»»ä½•å›¾ä¹¦ä¿¡æ¯!\n\n");
     }
     else
     {
       	n=0;
-      	printf("|---------------------------------Í¼ÊéĞÅÏ¢---------------------------------|\n");
-      	printf("|±àºÅ  ÊéÃû        ×÷Õß      ³ö°æÉç          Àà±ğ    µ¥¼Û    ¹İ²ØÁ¿  ½èÔÄÊı|\n");
+      	printf("|---------------------------------å›¾ä¹¦ä¿¡æ¯---------------------------------|\n");
+      	printf("|ç¼–å·  ä¹¦å        ä½œè€…      å‡ºç‰ˆç¤¾          ç±»åˆ«    å•ä»·    é¦†è—é‡  å€Ÿé˜…æ•°|\n");
       	printf("|                                                                          |\n");
       	while(n<booknumber)
         {
@@ -450,19 +450,19 @@ void display_book()/*ÏÔÊ¾È«²¿Í¼ÊéĞÅÏ¢*/
         	n++;
         }
       }
-    printf("\n\n°´ÈÎÒâ¼ü·µ»ØÉÏÒ»¼¶²Ëµ¥!\n");
+    printf("\n\næŒ‰ä»»æ„é”®è¿”å›ä¸Šä¸€çº§èœå•!\n");
    	getch();
 }
 
-void search_book()/*¸ù¾İÍ¼ÊéÃû³ÆÏÔÊ¾Í¼ÊéµÄĞÅÏ¢*/
+void search_book()/*æ ¹æ®å›¾ä¹¦åç§°æ˜¾ç¤ºå›¾ä¹¦çš„ä¿¡æ¯*/
 {
 	int flag=1,flag1=1;
 	char select;
-    char name_compare[30]="";/*name_compareÓÃÀ´´æ·ÅÒª²éÑ¯µÄÊéÃû*/
-   	char number_compare[30]=""; /*number_compareÓÃÀ´´æ·ÅÒª²éÑ¯µÄÊé¼®±àºÅ*/
-   	char author_compare[30]="";/*author_compareÓÃÀ´´æ·ÅÒª²éÑ¯µÄ×÷ÕßĞÕÃû*/
-	char search[30]="";/*searchÊÇ±È¶ÔÊı×é,½«ĞèÒª²éÕÒµÄÊı×é¶Á½ø±È¶ÔÊı×é*/
-	char compare[30]="";/*compareÊÇ±È¶ÔÊı×é,½«Êé¿âÖĞµÄÊı×é¶Á½ø±È¶ÔÊı×é*/
+    char name_compare[30]="";/*name_compareç”¨æ¥å­˜æ”¾è¦æŸ¥è¯¢çš„ä¹¦å*/
+   	char number_compare[30]=""; /*number_compareç”¨æ¥å­˜æ”¾è¦æŸ¥è¯¢çš„ä¹¦ç±ç¼–å·*/
+   	char author_compare[30]="";/*author_compareç”¨æ¥å­˜æ”¾è¦æŸ¥è¯¢çš„ä½œè€…å§“å*/
+	char search[30]="";/*searchæ˜¯æ¯”å¯¹æ•°ç»„,å°†éœ€è¦æŸ¥æ‰¾çš„æ•°ç»„è¯»è¿›æ¯”å¯¹æ•°ç»„*/
+	char compare[30]="";/*compareæ˜¯æ¯”å¯¹æ•°ç»„,å°†ä¹¦åº“ä¸­çš„æ•°ç»„è¯»è¿›æ¯”å¯¹æ•°ç»„*/
     int n=0;
     FILE *p1;
     char choice;
@@ -489,17 +489,17 @@ void search_book()/*¸ù¾İÍ¼ÊéÃû³ÆÏÔÊ¾Í¼ÊéµÄĞÅÏ¢*/
 		{
 			system("cls");
 			fflush(stdin);
-			printf("ÄúÏëÍ¨¹ı\n\n1.<-Í¼Êé±àºÅ->\n\n2.<-ÊéÃû->\n\n3.<-×÷ÕßÃû->\n\nÄÄÖÖ·½Ê½²éÑ¯Í¼Êé:");
+			printf("æ‚¨æƒ³é€šè¿‡\n\n1.<-å›¾ä¹¦ç¼–å·->\n\n2.<-ä¹¦å->\n\n3.<-ä½œè€…å->\n\nå“ªç§æ–¹å¼æŸ¥è¯¢å›¾ä¹¦:");
     		select=getch();
     		printf("%c",select);
-			printf("\n\nÇëÄúÊäÈë²éÕÒĞÅÏ¢:");		
+			printf("\n\nè¯·æ‚¨è¾“å…¥æŸ¥æ‰¾ä¿¡æ¯:");		
 			switch(select)
 			{
 				case '1':gets(number_compare);strcpy(search,number_compare);flag1=0;break;
 				case '2':gets(name_compare);strcpy(search,name_compare);flag1=0;break;
 				case '3':gets(author_compare);strcpy(search,author_compare);flag1=0;break;
 				default :
-					printf("\n²»ÒªÊäÈë²Ëµ¥Ö®ÍâµÄÊı×Ö~°´ÈÎÒâ¼ü¼ÌĞø£¡");
+					printf("\nä¸è¦è¾“å…¥èœå•ä¹‹å¤–çš„æ•°å­—~æŒ‰ä»»æ„é”®ç»§ç»­ï¼");
 					fflush(stdin);
             	    getch(); 
 			}
@@ -508,8 +508,8 @@ void search_book()/*¸ù¾İÍ¼ÊéÃû³ÆÏÔÊ¾Í¼ÊéµÄĞÅÏ¢*/
 	flag1=1;
     if(bookinfo[0].quantity==0)
     {
-      	printf("Êé¿âÖĞÃ»ÓĞÈÎºÎĞÅÏ¢!\n\n");
-      	printf("°´ÈÎÒâ¼ü»Øµ½Ö÷²Ëµ¥!\n\n");
+      	printf("ä¹¦åº“ä¸­æ²¡æœ‰ä»»ä½•ä¿¡æ¯!\n\n");
+      	printf("æŒ‰ä»»æ„é”®å›åˆ°ä¸»èœå•!\n\n");
       	getch();
       	break;
     }
@@ -525,8 +525,8 @@ void search_book()/*¸ù¾İÍ¼ÊéÃû³ÆÏÔÊ¾Í¼ÊéµÄĞÅÏ¢*/
 			}
         	if(strcmp(compare,search)==0)
           	{
-         		printf("|---------------------------------Í¼ÊéĞÅÏ¢---------------------------------|\n");
-      			printf("|±àºÅ  ÊéÃû        ×÷Õß      ³ö°æÉç          Àà±ğ    µ¥¼Û    ¹İ²ØÁ¿  ½èÔÄÊı|\n");
+         		printf("|---------------------------------å›¾ä¹¦ä¿¡æ¯---------------------------------|\n");
+      			printf("|ç¼–å·  ä¹¦å        ä½œè€…      å‡ºç‰ˆç¤¾          ç±»åˆ«    å•ä»·    é¦†è—é‡  å€Ÿé˜…æ•°|\n");
       			printf("|                                                                          |\n");
     			printf("|%-6s%-12s%-10s%-16s%-8s%-8.1f%-8d%-6d|\n",bookinfo[n].number,bookinfo[n].name,bookinfo[n].author,
                         bookinfo[n].press,bookinfo[n].category,bookinfo[n].price,bookinfo[n].quantity,bookinfo[n].time);
@@ -534,9 +534,9 @@ void search_book()/*¸ù¾İÍ¼ÊéÃû³ÆÏÔÊ¾Í¼ÊéµÄĞÅÏ¢*/
 			}
        	}
    			if(n>=booknumber)
-       		printf("\nÃ»ÓĞ²éÕÒ·ûºÏÄúÒªÇóµÄÊé¼®!\n");
+       		printf("\næ²¡æœ‰æŸ¥æ‰¾ç¬¦åˆæ‚¨è¦æ±‚çš„ä¹¦ç±!\n");
        		
-      		printf("\n\nÊÇ·ñ¼ÌĞø²éÑ¯(y/n):");
+      		printf("\n\næ˜¯å¦ç»§ç»­æŸ¥è¯¢(y/n):");
       		choice=getch();
      		while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	    	choice=getch();
@@ -551,9 +551,9 @@ void search_book()/*¸ù¾İÍ¼ÊéÃû³ÆÏÔÊ¾Í¼ÊéµÄĞÅÏ¢*/
 	}
 }
 
-void delete_book()/*¸ù¾İÍ¼ÊéÃû³Æ¶ÔÍ¼ÊéĞÅÏ¢½øĞĞÉ¾³ı*/
+void delete_book()/*æ ¹æ®å›¾ä¹¦åç§°å¯¹å›¾ä¹¦ä¿¡æ¯è¿›è¡Œåˆ é™¤*/
 {
-    char search[20]="";/*searchÓÃÀ´´æ·ÅÒªÉ¾³ıµÄÊéÃû*/
+    char search[20]="";/*searchç”¨æ¥å­˜æ”¾è¦åˆ é™¤çš„ä¹¦å*/
     int n,i;
     FILE *p1;
     char choice;
@@ -564,7 +564,7 @@ void delete_book()/*¸ù¾İÍ¼ÊéÃû³Æ¶ÔÍ¼ÊéĞÅÏ¢½øĞĞÉ¾³ı*/
     while(1)
     {
     	fflush(stdin);
-        printf("ÊäÈëÒªÉ¾³ıµÄÊé±¾Ãû³Æ:");
+        printf("è¾“å…¥è¦åˆ é™¤çš„ä¹¦æœ¬åç§°:");
       	gets(search);
      	p1=fopen("library.txt","r");
       	booknumber=0;
@@ -579,11 +579,11 @@ void delete_book()/*¸ù¾İÍ¼ÊéÃû³Æ¶ÔÍ¼ÊéĞÅÏ¢½øĞĞÉ¾³ı*/
      	fclose(p1);
       	if(bookinfo[0].quantity==0)
         {
-        	printf("Êé¿âÖĞÃ»ÓĞÈÎºÎĞÅÏ¢!\n\n");
-        	printf("°´ÈÎÒâ¼ü»Øµ½Ö÷²Ëµ¥!\n\n");
+        	printf("ä¹¦åº“ä¸­æ²¡æœ‰ä»»ä½•ä¿¡æ¯!\n\n");
+        	printf("æŒ‰ä»»æ„é”®å›åˆ°ä¸»èœå•!\n\n");
         	getch();
         	break;
-        }/*if½áÊø*/
+        }/*ifç»“æŸ*/
         else
         {
         	for(n=0;n<booknumber;n++)
@@ -592,10 +592,10 @@ void delete_book()/*¸ù¾İÍ¼ÊéÃû³Æ¶ÔÍ¼ÊéĞÅÏ¢½øĞĞÉ¾³ı*/
            		break;
             }
         	if(n>=booknumber)
-          		printf("\nÃ»ÓĞ²éÕÒ¸ÃÊéµÄÈÎºÎĞÅÏ¢!\n");
+          		printf("\næ²¡æœ‰æŸ¥æ‰¾è¯¥ä¹¦çš„ä»»ä½•ä¿¡æ¯!\n");
         	else
             {
-           		printf("\nÊÇ·ñÈ·ÈÏĞèÒªÉ¾³ı¸ÃÌõÊéÄ¿(Y/N):");
+           		printf("\næ˜¯å¦ç¡®è®¤éœ€è¦åˆ é™¤è¯¥æ¡ä¹¦ç›®(Y/N):");
            		choice=getch();
              	while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	    		choice=getch();
@@ -611,12 +611,12 @@ void delete_book()/*¸ù¾İÍ¼ÊéÃû³Æ¶ÔÍ¼ÊéĞÅÏ¢½øĞĞÉ¾³ı*/
 						bookinfo[n].number,bookinfo[n].name,bookinfo[n].author,
 						bookinfo[n].press,bookinfo[n].category,bookinfo[n].price,bookinfo[n].quantity,bookinfo[n].time);
              		fclose(p1);
-           			printf("\nÉ¾³ı³É¹¦!");
+           			printf("\nåˆ é™¤æˆåŠŸ!");
              	}
            		else
-              		printf("\n¸ÃÌõÊéÄ¿Ã»ÓĞ±»É¾³ı!");
+              		printf("\nè¯¥æ¡ä¹¦ç›®æ²¡æœ‰è¢«åˆ é™¤!");
            }
-            printf("\n\nÊÇ·ñ¼ÌĞø½øĞĞÉ¾³ı²Ù×÷(y/n):");
+            printf("\n\næ˜¯å¦ç»§ç»­è¿›è¡Œåˆ é™¤æ“ä½œ(y/n):");
          		choice=getch();
          	while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	   		choice=getch();
@@ -626,11 +626,11 @@ void delete_book()/*¸ù¾İÍ¼ÊéÃû³Æ¶ÔÍ¼ÊéĞÅÏ¢½øĞĞÉ¾³ı*/
            		continue;
          	else
            		break;
-        }/*else½áÊø*/
-      }/*while(1)½áÊø*/
+        }/*elseç»“æŸ*/
+      }/*while(1)ç»“æŸ*/
     }
 
-void display_price_lower()/*¸ù¾İ¼Û¸ñÁĞ³öÍ¼ÊéĞÅÏ¢*/
+void display_price_lower()/*æ ¹æ®ä»·æ ¼åˆ—å‡ºå›¾ä¹¦ä¿¡æ¯*/
 {
     float price;
     FILE *p1;
@@ -640,7 +640,7 @@ void display_price_lower()/*¸ù¾İ¼Û¸ñÁĞ³öÍ¼ÊéĞÅÏ¢*/
     int booknumber;
 
     system("cls");
-    printf("ÇëÊäÈëÄãµÄÀíÏë¼Û¸ñ,ÎÒÃÇ½«ÍÆ¼ö±ÈÄúÀíÏë¼ÛÎ»ÉÔµÍµÄÊé¼®:");
+    printf("è¯·è¾“å…¥ä½ çš„ç†æƒ³ä»·æ ¼,æˆ‘ä»¬å°†æ¨èæ¯”æ‚¨ç†æƒ³ä»·ä½ç¨ä½çš„ä¹¦ç±:");
     scanf("%f",&price);
     p1=fopen("library.txt","r");
     booknumber=0;
@@ -655,7 +655,7 @@ void display_price_lower()/*¸ù¾İ¼Û¸ñÁĞ³öÍ¼ÊéĞÅÏ¢*/
     fclose(p1);
     if(bookinfo[0].quantity==0)
     {
-      	printf("\nÃ»ÓĞÈÎºÎÍ¼ÊéĞÅÏ¢!\n");
+      	printf("\næ²¡æœ‰ä»»ä½•å›¾ä¹¦ä¿¡æ¯!\n");
     }
     else
     {
@@ -665,12 +665,12 @@ void display_price_lower()/*¸ù¾İ¼Û¸ñÁĞ³öÍ¼ÊéĞÅÏ¢*/
           	count++;
         }
       	if(count==0)
-       		printf("Êé¿âÖĞÃ»ÓĞ±È%.1fÔª¼Û¸ñ¸üµÍµÄÍ¼Êé¡£",price);
+       		printf("ä¹¦åº“ä¸­æ²¡æœ‰æ¯”%.1få…ƒä»·æ ¼æ›´ä½çš„å›¾ä¹¦ã€‚",price);
       	else
         {
-        	printf("\n¼Û¸ñµÍÓÚ%.1fÔªµÄÍ¼ÊéĞÅÏ¢ÓĞ%d±¾\n",price,count);
-       		printf("|---------------------------------Í¼ÊéĞÅÏ¢---------------------------------|\n");
-      		printf("|±àºÅ  ÊéÃû        ×÷Õß      ³ö°æÉç          Àà±ğ    µ¥¼Û    ¹İ²ØÁ¿  ½èÔÄÊı|\n");
+        	printf("\nä»·æ ¼ä½äº%.1få…ƒçš„å›¾ä¹¦ä¿¡æ¯æœ‰%dæœ¬\n",price,count);
+       		printf("|---------------------------------å›¾ä¹¦ä¿¡æ¯---------------------------------|\n");
+      		printf("|ç¼–å·  ä¹¦å        ä½œè€…      å‡ºç‰ˆç¤¾          ç±»åˆ«    å•ä»·    é¦†è—é‡  å€Ÿé˜…æ•°|\n");
       		printf("|                                                                          |\n");
         	for(n=0;n<booknumber;n++)
           	{
@@ -680,7 +680,7 @@ void display_price_lower()/*¸ù¾İ¼Û¸ñÁĞ³öÍ¼ÊéĞÅÏ¢*/
           	}
         }
       }
-    printf("\n\n°´ÈÎÒâ¼ü»Øµ½Ö÷²Ëµ¥!\n");
+    printf("\n\næŒ‰ä»»æ„é”®å›åˆ°ä¸»èœå•!\n");
     getch();
     }
 
@@ -688,15 +688,15 @@ void modify_book()
 {
 	int flag=1,flag1=1,flag2,n;
 	char change,choice;
-	char number[15];/*Í¼Êé±àºÅ*/
-    char name[30];/*Í¼ÊéÃû³Æ*/
-    char author[20];/*×÷Õß*/
-   	char press[30];/*³ö°æÉç*/
-	char category[20];/*Àà±ğ*/ 
-    int  quantity;/*²ØÊéÁ¿*/
-    float price;/*µ¥¼Û*/
+	char number[15];/*å›¾ä¹¦ç¼–å·*/
+    char name[30];/*å›¾ä¹¦åç§°*/
+    char author[20];/*ä½œè€…*/
+   	char press[30];/*å‡ºç‰ˆç¤¾*/
+	char category[20];/*ç±»åˆ«*/ 
+    int  quantity;/*è—ä¹¦é‡*/
+    float price;/*å•ä»·*/
     
-	char search[30];/*ÒªĞŞ¸ÄµÄÊéÃû*/ 
+	char search[30];/*è¦ä¿®æ”¹çš„ä¹¦å*/ 
 	FILE *p1;
 	BOOKINFO bookinfo[100];
 	int booknumber;
@@ -705,7 +705,7 @@ void modify_book()
     	flag2=0;
     	system("cls");
     	fflush(stdin);
-      	printf("ÊäÈëÒªĞŞ¸ÄĞÅÏ¢µÄÊé±¾Ãû:");
+      	printf("è¾“å…¥è¦ä¿®æ”¹ä¿¡æ¯çš„ä¹¦æœ¬å:");
       	gets(search);
       	p1=fopen("library.txt","r");
       	booknumber=0;
@@ -720,8 +720,8 @@ void modify_book()
       	fclose(p1);
       	if(bookinfo[0].quantity==0)
         {
-        	printf("Êé¿âÖĞÃ»ÓĞÈÎºÎĞÅÏ¢!\n\n");
-        	printf("°´ÈÎÒâ¼ü»Øµ½Ö÷²Ëµ¥!\n\n");
+        	printf("ä¹¦åº“ä¸­æ²¡æœ‰ä»»ä½•ä¿¡æ¯!\n\n");
+        	printf("æŒ‰ä»»æ„é”®å›åˆ°ä¸»èœå•!\n\n");
         	getch();
         	break;
         }
@@ -731,19 +731,19 @@ void modify_book()
          		if(strcmp(bookinfo[n].name,search)==0)
             	{
             		printf("\n"); 
-         			printf("|---------------------------------Í¼ÊéĞÅÏ¢---------------------------------|\n");
-      				printf("|±àºÅ  ÊéÃû        ×÷Õß      ³ö°æÉç          Àà±ğ    µ¥¼Û    ¹İ²ØÁ¿  ½èÔÄÊı|\n");
+         			printf("|---------------------------------å›¾ä¹¦ä¿¡æ¯---------------------------------|\n");
+      				printf("|ç¼–å·  ä¹¦å        ä½œè€…      å‡ºç‰ˆç¤¾          ç±»åˆ«    å•ä»·    é¦†è—é‡  å€Ÿé˜…æ•°|\n");
       				printf("|                                                                          |\n");
     				printf("|%-6s%-12s%-10s%-16s%-8s%-8.1f%-8d%-6d|\n",bookinfo[n].number,bookinfo[n].name,bookinfo[n].author,
                      	   bookinfo[n].press,bookinfo[n].category,bookinfo[n].price,bookinfo[n].quantity,bookinfo[n].time);
        				
 					while(flag1){
-					printf("\n1.Êé¼®±àºÅ\n2.Êé¼®Ãû³Æ\n3.Êé¼®×÷Õß\n4.³ö°æÉç\n5.Êé¼®Àà±ğ\n6.Êé¼®µ¥¼Û\n7.²ØÊéÁ¿\n\nÄúÏëÒªĞŞ¸ÄµÄÊÇ:");
+					printf("\n1.ä¹¦ç±ç¼–å·\n2.ä¹¦ç±åç§°\n3.ä¹¦ç±ä½œè€…\n4.å‡ºç‰ˆç¤¾\n5.ä¹¦ç±ç±»åˆ«\n6.ä¹¦ç±å•ä»·\n7.è—ä¹¦é‡\n\næ‚¨æƒ³è¦ä¿®æ”¹çš„æ˜¯:");
 					change=getch();
 					while(change!='1'&&change!='2'&&change!='3'&&change!='4'&&change!='5'&&change!='6'&&change!='7')
   						change=getch();
   					printf("%c",change);
-           			printf("\nÇëÊäÈëĞÂµÄ×ÖÌõ:");
+           			printf("\nè¯·è¾“å…¥æ–°çš„å­—æ¡:");
            			fflush(stdin);
             		switch(change)
             		{
@@ -757,14 +757,14 @@ void modify_book()
             			case '5':gets(category);strcpy(bookinfo[n].category,category);flag1=0;break;
             			case '6':scanf("%f",&price);bookinfo[n].price=price;flag1=0;break;
             			case '7':scanf("%d",&quantity);bookinfo[n].quantity=quantity;flag1=0;break;
-            			default:break;/*ËäÈ»Ñ¹¸ù²»»á¶Áµ½defaultÇé¿ö£¬µ«ÊÇÅÂºóÀ´¿ª·¢ÕßÂ©µôĞÂ¼ÓµÄcaseµÄwhile´¦Àí£¬ËùÒÔ¼ÓÉÏ*/
+            			default:break;/*è™½ç„¶å‹æ ¹ä¸ä¼šè¯»åˆ°defaultæƒ…å†µï¼Œä½†æ˜¯æ€•åæ¥å¼€å‘è€…æ¼æ‰æ–°åŠ çš„caseçš„whileå¤„ç†ï¼Œæ‰€ä»¥åŠ ä¸Š*/
 					}
 				}
 			flag1=1;
             break;
             }
         if(n>=booknumber)
-           printf("\nÃ»ÓĞ²éÕÒ¸ÃÊéµÄÈÎºÎĞÅÏ¢!");
+           printf("\næ²¡æœ‰æŸ¥æ‰¾è¯¥ä¹¦çš„ä»»ä½•ä¿¡æ¯!");
         else if(!flag2)
         {
             p1=fopen("library.txt","w");
@@ -773,11 +773,11 @@ void modify_book()
 					bookinfo[n].number,bookinfo[n].name,bookinfo[n].author,
 					bookinfo[n].press,bookinfo[n].category,bookinfo[n].price,bookinfo[n].quantity,bookinfo[n].time);
             fclose(p1);
-            printf("\nĞŞ¸Ä³É¹¦!");
+            printf("\nä¿®æ”¹æˆåŠŸ!");
         }
         else
-        	printf("ÄúÏëĞŞ¸ÄµÄÍ¼ÊéĞÅÏ¢Óë¹İÄÚĞÅÏ¢ÖØ¸´¡£"); 
-   		printf("\nÊÇ·ñ¼ÌĞø½øĞĞĞŞ¸Ä(y/n):");
+        	printf("æ‚¨æƒ³ä¿®æ”¹çš„å›¾ä¹¦ä¿¡æ¯ä¸é¦†å†…ä¿¡æ¯é‡å¤ã€‚"); 
+   		printf("\næ˜¯å¦ç»§ç»­è¿›è¡Œä¿®æ”¹(y/n):");
         choice=getch();
         while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	    choice=getch();
@@ -802,7 +802,7 @@ void borrow_book(char account[20])
 
     while(flag)
     {
-      	printf("ÊäÈëÒª½èÔÄµÄÊé±¾Ãû:");
+      	printf("è¾“å…¥è¦å€Ÿé˜…çš„ä¹¦æœ¬å:");
       	gets(search);
       	p1=fopen("library.txt","r");
       	booknumber1=0;
@@ -818,8 +818,8 @@ void borrow_book(char account[20])
 	
       	if(bookinfo[0].quantity==0)
         {
-        	printf("\nÊé¿âÖĞÃ»ÓĞÈÎºÎĞÅÏ¢!\n");
-        	printf("°´ÈÎÒâ¼ü»Øµ½Ö÷²Ëµ¥!\n\n");
+        	printf("\nä¹¦åº“ä¸­æ²¡æœ‰ä»»ä½•ä¿¡æ¯!\n");
+        	printf("æŒ‰ä»»æ„é”®å›åˆ°ä¸»èœå•!\n\n");
         	getch();
         	break;
         }
@@ -831,7 +831,7 @@ void borrow_book(char account[20])
 					bookinfo[n].quantity--;
 					bookinfo[n].time++;
 					
-					p3=fopen("memberbook.txt","a");  /*½èÊéÒÔa×·¼ÓµÄ·½Ê½£¬ÔÚÎÄ¼şÖĞÔö¼ÓÒ»±¾Êé*/ 
+					p3=fopen("memberbook.txt","a");  /*å€Ÿä¹¦ä»¥aè¿½åŠ çš„æ–¹å¼ï¼Œåœ¨æ–‡ä»¶ä¸­å¢åŠ ä¸€æœ¬ä¹¦*/ 
 					fprintf(p1,"%s %s %s %s %s %f %s\n",
 							bookinfo[n].number,bookinfo[n].name,bookinfo[n].author,bookinfo[n].press,
 							bookinfo[n].category,bookinfo[n].price,account);
@@ -840,7 +840,7 @@ void borrow_book(char account[20])
 				}
             }
         if(n>=booknumber1)
-           printf("\nÃ»ÓĞ²éÕÒ¸ÃÊéµÄÈÎºÎĞÅÏ¢!\n");
+           printf("\næ²¡æœ‰æŸ¥æ‰¾è¯¥ä¹¦çš„ä»»ä½•ä¿¡æ¯!\n");
         else
         {
             p1=fopen("library.txt","w");
@@ -849,9 +849,9 @@ void borrow_book(char account[20])
 					bookinfo[n].number,bookinfo[n].name,bookinfo[n].author,bookinfo[n].press,
 					bookinfo[n].category,bookinfo[n].price,bookinfo[n].quantity,bookinfo[n].time);
             fclose(p1);
-            printf("\n½èÊé³É¹¦!\n");
+            printf("\nå€Ÿä¹¦æˆåŠŸ!\n");
         }
-   		printf("\nÊÇ·ñ¼ÌĞø½èÊé(y/n):");
+   		printf("\næ˜¯å¦ç»§ç»­å€Ÿä¹¦(y/n):");
         choice=getch();
         while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	    choice=getch();
@@ -901,9 +901,9 @@ void return_book(char account[20])
 		}
 		fclose(p3);				
       	
-		printf("ÄúËù½èÔÄµÄËùÓĞÍ¼ÊéĞÅÏ¢ÈçÏÂ:\n"); 
-        printf("|----------------------------Í¼Êé½èÔÄĞÅÏ¢--------------------|\n");
-      	printf("|±àºÅ  ÊéÃû        ×÷Õß      ³ö°æÉç          Àà±ğ    µ¥¼Û    |\n");
+		printf("æ‚¨æ‰€å€Ÿé˜…çš„æ‰€æœ‰å›¾ä¹¦ä¿¡æ¯å¦‚ä¸‹:\n"); 
+        printf("|----------------------------å›¾ä¹¦å€Ÿé˜…ä¿¡æ¯--------------------|\n");
+      	printf("|ç¼–å·  ä¹¦å        ä½œè€…      å‡ºç‰ˆç¤¾          ç±»åˆ«    å•ä»·    |\n");
         while(t<booknumber2)
        	{
         	if(strcmp(bookgrasp[t].account,account)==0)
@@ -915,12 +915,12 @@ void return_book(char account[20])
         	t++;
         }
       	
-      	printf("\nÊäÈëÒª¹é»¹µÄÊé±¾Ãû:");
+      	printf("\nè¾“å…¥è¦å½’è¿˜çš„ä¹¦æœ¬å:");
       	gets(search);
       	if(bookinfo[0].quantity==0)
         {
-        	printf("\nÊé¿âÖĞÃ»ÓĞÈÎºÎĞÅÏ¢!\n");
-        	printf("°´ÈÎÒâ¼ü»Øµ½Ö÷²Ëµ¥!\n\n");
+        	printf("\nä¹¦åº“ä¸­æ²¡æœ‰ä»»ä½•ä¿¡æ¯!\n");
+        	printf("æŒ‰ä»»æ„é”®å›åˆ°ä¸»èœå•!\n\n");
         	getch();
         	break;
         }
@@ -932,7 +932,7 @@ void return_book(char account[20])
 						bookinfo[n].quantity++;
 
 						if(bookgrasp[0].price==0)
-							printf("\nÄúÃ»ÓĞ½èÊéĞÅÏ¢¡£");
+							printf("\næ‚¨æ²¡æœ‰å€Ÿä¹¦ä¿¡æ¯ã€‚");
 						else{
 						for(k=0;k<booknumber2;k++)
 							if(!strcmp(bookgrasp[k].account,account)&&!strcmp(bookgrasp[k].name,search))
@@ -957,7 +957,7 @@ void return_book(char account[20])
 					}
 				} 
         if(n==booknumber||flag2==0)
-        	printf("Äú²¢Ã»ÓĞÕâÌõ½èÔÄĞÅÏ¢!\n"); 
+        	printf("æ‚¨å¹¶æ²¡æœ‰è¿™æ¡å€Ÿé˜…ä¿¡æ¯!\n"); 
         if(n<booknumber&&flag2==1)
         {
             p1=fopen("library.txt","w");
@@ -966,13 +966,13 @@ void return_book(char account[20])
 				bookinfo[n].number,bookinfo[n].name,bookinfo[n].author,
 				bookinfo[n].press,bookinfo[n].category,bookinfo[n].price,bookinfo[n].quantity,bookinfo[n].time);
             fclose(p1); 
-            printf("\n»¹Êé³É¹¦£¡");
+            printf("\nè¿˜ä¹¦æˆåŠŸï¼");
         }
         else
-        	printf("\n»¹ÊéÊ§°Ü£¡");
+        	printf("\nè¿˜ä¹¦å¤±è´¥ï¼");
         
 		fflush(stdin);	
-   		printf("\nÊÇ·ñ¼ÌĞø»¹Êé(y/n):");
+   		printf("\næ˜¯å¦ç»§ç»­è¿˜ä¹¦(y/n):");
         choice=getch();
         while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	    choice=getch();
@@ -985,7 +985,7 @@ void return_book(char account[20])
 	}
 }
 
-void dispaly_popular()/*Í¼ÊéÊÜ»¶Ó­¶ÈÅÅĞĞ°ñ*/ 
+void dispaly_popular()/*å›¾ä¹¦å—æ¬¢è¿åº¦æ’è¡Œæ¦œ*/ 
 {
     FILE *p1;
     int n,i,j,k;
@@ -1009,7 +1009,7 @@ void dispaly_popular()/*Í¼ÊéÊÜ»¶Ó­¶ÈÅÅĞĞ°ñ*/
     
     if(bookinfo[0].quantity==0)
     {
-      	printf("Ã»ÓĞÈÎºÎÍ¼ÊéĞÅÏ¢!\n\n");
+      	printf("æ²¡æœ‰ä»»ä½•å›¾ä¹¦ä¿¡æ¯!\n\n");
     }
     else
     {
@@ -1027,8 +1027,8 @@ void dispaly_popular()/*Í¼ÊéÊÜ»¶Ó­¶ÈÅÅĞĞ°ñ*/
       		}
       	}
         	
-       		printf("|---------------------------Í¼ÊéÊÜ»¶Ó­¶ÈÅÅĞĞ°ñ-----------------------------|\n");
-      		printf("|±àºÅ  ÊéÃû        ×÷Õß      ³ö°æÉç          Àà±ğ    µ¥¼Û    ¹İ²ØÁ¿  ½èÔÄÊı|\n");
+       		printf("|---------------------------å›¾ä¹¦å—æ¬¢è¿åº¦æ’è¡Œæ¦œ-----------------------------|\n");
+      		printf("|ç¼–å·  ä¹¦å        ä½œè€…      å‡ºç‰ˆç¤¾          ç±»åˆ«    å•ä»·    é¦†è—é‡  å€Ÿé˜…æ•°|\n");
       		printf("|                                                                          |\n");
         	for(n=0;n<booknumber;n++)
           	{
@@ -1037,7 +1037,7 @@ void dispaly_popular()/*Í¼ÊéÊÜ»¶Ó­¶ÈÅÅĞĞ°ñ*/
           	}
         
       }
-    printf("\n\n°´ÈÎÒâ¼ü»Øµ½Ö÷²Ëµ¥!\n");
+    printf("\n\næŒ‰ä»»æ„é”®å›åˆ°ä¸»èœå•!\n");
     getch();
 }
 
@@ -1085,31 +1085,31 @@ void member_log_up()
 		system("cls");
 		fflush(stdin);
 	
-		printf("ÊäÈëÄúÏë×¢²áµÄIDÃû:");
+		printf("è¾“å…¥æ‚¨æƒ³æ³¨å†Œçš„IDå:");
 		gets(member.ID);
 		
 		if(check_repeat_ID(member.ID))
 		{	
-			printf("¸ÃIDÒÑ±»×¢²á£¡ÇëÖØĞÂ×¢²á^_^\n");
-			printf("°´ÈÎÒâ¼üÖØĞÂ×¢²á\n\n");
+			printf("è¯¥IDå·²è¢«æ³¨å†Œï¼è¯·é‡æ–°æ³¨å†Œ^_^\n");
+			printf("æŒ‰ä»»æ„é”®é‡æ–°æ³¨å†Œ\n\n");
 			getch();
 			flag=1; 
 		}
 		else{
 			flag=0;
-			printf("ÊäÈëÄúµÄÃÜÂë(²»Òª¸æÖªËûÈË):");
+			printf("è¾“å…¥æ‚¨çš„å¯†ç (ä¸è¦å‘ŠçŸ¥ä»–äºº):");
 			gets(member.password);
 			
-			printf("ÊäÈëÕÒ»ØÃÜÂëµÄÃÜÔ¿(ÒÔÃâÍü¼ÇÕË»§»òÃÜÂë²»ÄÜµÇÂ½£¡):"); 
+			printf("è¾“å…¥æ‰¾å›å¯†ç çš„å¯†é’¥(ä»¥å…å¿˜è®°è´¦æˆ·æˆ–å¯†ç ä¸èƒ½ç™»é™†ï¼):"); 
 			gets(member.password_key); 
 			
-			printf("ÊäÈëÄúµÄĞÕÃû:");
+			printf("è¾“å…¥æ‚¨çš„å§“å:");
 			gets(member.name);
 	
-			printf("ÊäÈëÄúµÄĞÔ±ğ(ÄĞÊ¿ÊäÈëmale,Å®Ê¿ÊäÈëfemale):");
+			printf("è¾“å…¥æ‚¨çš„æ€§åˆ«(ç”·å£«è¾“å…¥male,å¥³å£«è¾“å…¥female):");
 			gets(member.sex);
 	
-			printf("ÊÇ·ñ±£´æÕâ´Î×¢²áĞÅÏ¢(y/n):");
+			printf("æ˜¯å¦ä¿å­˜è¿™æ¬¡æ³¨å†Œä¿¡æ¯(y/n):");
     		choice1=getch();
     		while(choice1!='Y'&&choice1!='y'&&choice1!='N'&&choice1!='n')
       	    	choice1=getch();
@@ -1121,13 +1121,13 @@ void member_log_up()
 	    	fprintf(p2,"%s %s %s %s %s\n",member.ID,member.password,
 					member.password_key,member.name,member.sex);
 	    	fclose(p2);
-			printf("\nÄúµÄÕË»§ÒÑ×¢²á³É¹¦£¡\n");
+			printf("\næ‚¨çš„è´¦æˆ·å·²æ³¨å†ŒæˆåŠŸï¼\n");
     	}
     	else
     	{
-       		printf("\nÄúµÄ×¢²áĞÅÏ¢Î´±£´æ!\n");
+       		printf("\næ‚¨çš„æ³¨å†Œä¿¡æ¯æœªä¿å­˜!\n");
     	}
-    	printf("\nÊÇ·ñ¼ÌĞø×¢²á»áÔ±(y/n):");
+    	printf("\næ˜¯å¦ç»§ç»­æ³¨å†Œä¼šå‘˜(y/n):");
         choice2=getch();
         while(choice2!='Y'&&choice2!='y'&&choice2!='N'&&choice2!='n')
       	    choice2=getch();
@@ -1172,9 +1172,9 @@ int user_account(char account[20])
 			fclose(p3);
 			if(bookgrasp[0].price<=1e-8)
 			{
-				printf("µ±Ç°Í¼Êé¹İÎ´ÓĞÈÎºÎ½èÊéĞÅÏ¢");
+				printf("å½“å‰å›¾ä¹¦é¦†æœªæœ‰ä»»ä½•å€Ÿä¹¦ä¿¡æ¯");
 				flag=0;
-				printf("\n\n°´ÈÎÒâ¼ü·µ»Ø!\n");
+				printf("\n\næŒ‰ä»»æ„é”®è¿”å›!\n");
    				getch();
 			}
 			else{ 		
@@ -1183,12 +1183,12 @@ int user_account(char account[20])
 					{
 						i=0;
 						printf("\n");
-						printf("|---------------------------¸öÈËĞÅÏ¢-------------------------|\n");
-    					printf("|ĞÕÃû        ĞÔ±ğ      ID              ÃÜÂë                  |\n");
+						printf("|---------------------------ä¸ªäººä¿¡æ¯-------------------------|\n");
+    					printf("|å§“å        æ€§åˆ«      ID              å¯†ç                   |\n");
     					printf("|%-12s%-10s%-16s%-22s%|\n",member[n].name,member[n].sex,member[n].ID,member[n].password);
     					printf("|                                                            |\n");
-    					printf("|----------------------------Í¼Êé½èÔÄĞÅÏ¢--------------------|\n");
-      					printf("|±àºÅ  ÊéÃû        ×÷Õß      ³ö°æÉç          Àà±ğ    µ¥¼Û    |\n");
+    					printf("|----------------------------å›¾ä¹¦å€Ÿé˜…ä¿¡æ¯--------------------|\n");
+      					printf("|ç¼–å·  ä¹¦å        ä½œè€…      å‡ºç‰ˆç¤¾          ç±»åˆ«    å•ä»·    |\n");
       		
       					while(i<booknumber)
        				 	{
@@ -1202,18 +1202,18 @@ int user_account(char account[20])
         					i++;
         				}
         				if(strcmp(member[n].sex,"male")==0) 
-       				 	printf("\n%sÏÈÉú£¬Äúµ±Ç°½èÔÄµÄÊé¼®¹²ÓĞ%d±¾¡£",member[n].name,count);
+       				 	printf("\n%så…ˆç”Ÿï¼Œæ‚¨å½“å‰å€Ÿé˜…çš„ä¹¦ç±å…±æœ‰%dæœ¬ã€‚",member[n].name,count);
         				else if(strcmp(member[n].sex,"female")==0)
-        				printf("\n%sÅ®Ê¿£¬Äúµ±Ç°½èÔÄµÄÊé¼®¹²ÓĞ%d±¾¡£",member[n].name,count);
+        				printf("\n%så¥³å£«ï¼Œæ‚¨å½“å‰å€Ÿé˜…çš„ä¹¦ç±å…±æœ‰%dæœ¬ã€‚",member[n].name,count);
         				else
-						printf("\n%s£¬Äúµ±Ç°½èÔÄµÄÊé¼®¹²ÓĞ%d±¾¡£",member[n].name,count); 
+						printf("\n%sï¼Œæ‚¨å½“å‰å€Ÿé˜…çš„ä¹¦ç±å…±æœ‰%dæœ¬ã€‚",member[n].name,count); 
         				
 						if(bookgrasp[0].price<=1e-8) 
-       				 	printf("\n¶øÍ¼Êé¹İÄÚ¹²ÓĞ0±¾Êé¼®ÕıÔÚ±»½èÔÄ¡£\n");
+       				 	printf("\nè€Œå›¾ä¹¦é¦†å†…å…±æœ‰0æœ¬ä¹¦ç±æ­£åœ¨è¢«å€Ÿé˜…ã€‚\n");
        				 	else
-       				 	printf("\n¶øÍ¼Êé¹İÄÚ¹²ÓĞ%d±¾Êé¼®ÕıÔÚ±»½èÔÄ¡£\n",booknumber);
+       				 	printf("\nè€Œå›¾ä¹¦é¦†å†…å…±æœ‰%dæœ¬ä¹¦ç±æ­£åœ¨è¢«å€Ÿé˜…ã€‚\n",booknumber);
         	
-						printf("\nPS:ÊÇ·ñĞèÒªĞŞ¸ÄÃÜÂë(y/n):");
+						printf("\nPS:æ˜¯å¦éœ€è¦ä¿®æ”¹å¯†ç (y/n):");
 						fflush(stdin);
 						choice=getch();
 						while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
@@ -1222,12 +1222,12 @@ int user_account(char account[20])
 						printf("\n");
 						if(choice=='Y'||choice=='y')
 						{
-							printf("\nÇëÊäÈëĞŞ¸ÄÃÜÂëµÄÃÜÔ¿(user_key):");
+							printf("\nè¯·è¾“å…¥ä¿®æ”¹å¯†ç çš„å¯†é’¥(user_key):");
 							fflush(stdin);
 							gets(key);
 							if(strcmp(member[n].password_key,key)==0)
 							{
-								printf("ÇëÊäÈëĞÂÃÜÂë£º");
+								printf("è¯·è¾“å…¥æ–°å¯†ç ï¼š");
 								fflush(stdin);
 								gets(new_password);
 								strcpy(member[n].password,new_password);
@@ -1239,7 +1239,7 @@ int user_account(char account[20])
            						fclose(p2);
            						}
            						else{
-           							printf("\nÊäÈëÃÜÔ¿´íÎó!"); 
+           							printf("\nè¾“å…¥å¯†é’¥é”™è¯¯!"); 
 								}
 							}
 						else
@@ -1249,8 +1249,8 @@ int user_account(char account[20])
     				}		 
    	if(flag==1)
    		{
-		    printf("\nÃÜÂëĞŞ¸Ä³É¹¦£¡"); 
-		    printf("\n°´ÈÎÒâ¼ü·µ»Ø!\n");
+		    printf("\nå¯†ç ä¿®æ”¹æˆåŠŸï¼"); 
+		    printf("\næŒ‰ä»»æ„é”®è¿”å›!\n");
    			getch();
 		    return 1;
 		}
@@ -1259,7 +1259,7 @@ int user_account(char account[20])
 	}
 } 
 
-void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
+void find_account()/*è´¦æˆ·æ‰¾å›å‡½æ•°*/
 {
 	FILE *p2;
 	MEMBER member[100];
@@ -1270,7 +1270,7 @@ void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
 
     	system("cls");
     	fflush(stdin);
-    	printf("ÊäÈëÄúµÄĞÕÃû:");
+    	printf("è¾“å…¥æ‚¨çš„å§“å:");
     	gets(search);
       	p2=fopen("infomember.txt","r");
       	number=0;
@@ -1283,7 +1283,7 @@ void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
       	fclose(p2);
       	if(strcmp(member[0].ID,vacancy)==0)
         {
-        	printf("ÏµÍ³ÖĞ»¹Ã»ÓĞÈÎºÎ»áÔ±ĞÅÏ¢!\n\n");
+        	printf("ç³»ç»Ÿä¸­è¿˜æ²¡æœ‰ä»»ä½•ä¼šå‘˜ä¿¡æ¯!\n\n");
         }
         else
         {
@@ -1293,17 +1293,17 @@ void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
             		mark=1;
             		while(flag)
             		{
-						printf("ÇëÊäÈëÄúµÄÃÜÔ¿:");
+						printf("è¯·è¾“å…¥æ‚¨çš„å¯†é’¥:");
 						fflush(stdin);
 						gets(compare);
 						if(strcmp(member[n].password_key,compare)==0)
 						{
 							printf("\n");
-							printf("|------------------------------¸öÈËĞÅÏ¢------------------------------|\n");
-    						printf("|ĞÕÃû        ĞÔ±ğ      ID                  ÃÜÂë	                     |\n");
+							printf("|------------------------------ä¸ªäººä¿¡æ¯------------------------------|\n");
+    						printf("|å§“å        æ€§åˆ«      ID                  å¯†ç 	                     |\n");
     						printf("|%-12s%-10s%-20s%-26s%|\n",member[n].name,member[n].sex,member[n].ID,member[n].password);
 						
-							printf("\nÊÇ·ñĞèÒªĞŞ¸ÄÃÜÂë(y/n):");
+							printf("\næ˜¯å¦éœ€è¦ä¿®æ”¹å¯†ç (y/n):");
 							fflush(stdin);
 							choice=getch();
 							while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
@@ -1312,7 +1312,7 @@ void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
 							printf("\n");
 							if(choice=='Y'||choice=='y')
 								{
-									printf("\nÇëÊäÈëĞÂÃÜÂë£º");
+									printf("\nè¯·è¾“å…¥æ–°å¯†ç ï¼š");
 									fflush(stdin);
 									gets(new_password);
 									strcpy(member[n].password,new_password);
@@ -1322,11 +1322,11 @@ void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
 								flag=0;	
 						}
 						else{
-							--k;/*ÃÜÂëÊäÈë´ÎÊıcount*/ 
+							--k;/*å¯†ç è¾“å…¥æ¬¡æ•°count*/ 
 							if(k!=0)
 							{
-								printf("\n\n\n\t\tÄúµÄÃÜÂëÊäÈëÓĞÎó!\n\t\tÄú»¹ÓĞ%d´Î»ú»áÖØĞÂÊäÈëÃÜÂë£¡",k);
-								printf("ÄúÊÇ·ñÒª¼ÌĞøÊäÈëÃÜÂë(y/n):");
+								printf("\n\n\n\t\tæ‚¨çš„å¯†ç è¾“å…¥æœ‰è¯¯!\n\t\tæ‚¨è¿˜æœ‰%dæ¬¡æœºä¼šé‡æ–°è¾“å…¥å¯†ç ï¼",k);
+								printf("æ‚¨æ˜¯å¦è¦ç»§ç»­è¾“å…¥å¯†ç (y/n):");
 								fflush(stdin);
 								while(choice!='Y'&&choice!='y'&&choice!='N'&&choice!='n')
       	    						choice=getch();
@@ -1338,7 +1338,7 @@ void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
 									flag=0;
 							}	
 							else{
-								printf("ÄúÊäÈë´ÎÊıÒÑÓÃÍê£¡ÕıÔÚÍË»ØÖ÷½çÃæ...");
+								printf("æ‚¨è¾“å…¥æ¬¡æ•°å·²ç”¨å®Œï¼æ­£åœ¨é€€å›ä¸»ç•Œé¢...");
 								flag=0;
               	 		}
 					}
@@ -1347,7 +1347,7 @@ void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
  		}
  		if(mark==0)
         {
-		   	printf("Äú²¢Î´×¢²á±¾ÏµÍ³»áÔ±!\n");
+		   	printf("æ‚¨å¹¶æœªæ³¨å†Œæœ¬ç³»ç»Ÿä¼šå‘˜!\n");
         } 
         else
         {
@@ -1358,15 +1358,15 @@ void find_account()/*ÕË»§ÕÒ»Øº¯Êı*/
             	fprintf(p2,"%s %s %s %s %s\n",member[n].ID,member[n].password,
 						member[n].password_key,member[n].name,member[n].sex);
             fclose(p2);
-            printf("ÄúÒÑ³É¹¦ÕÒ»Ø/ĞŞ¸ÄÕË»§!\n");
+            printf("æ‚¨å·²æˆåŠŸæ‰¾å›/ä¿®æ”¹è´¦æˆ·!\n");
         	}
         }
-    printf("\n\n°´ÈÎÒâ¼ü»Øµ½Ö÷²Ëµ¥!\n");
+    printf("\n\næŒ‰ä»»æ„é”®å›åˆ°ä¸»èœå•!\n");
     fflush(stdin);
     getch();
 } 
  
-int member_log_in(char account[15])/*»áÔ±µÇÂ¼º¯Êı*/
+int member_log_in(char account[15])/*ä¼šå‘˜ç™»å½•å‡½æ•°*/
 {
 	FILE *p2;
 	MEMBER member[100];
@@ -1393,18 +1393,18 @@ int member_log_in(char account[15])/*»áÔ±µÇÂ¼º¯Êı*/
 		{
 			while(flag2)
 			{
-				if(compare_password(member[n].password))/* µ÷ÓÃ»áÔ±ÃÜÂë±È¶Ôº¯Êı */ 
+				if(compare_password(member[n].password))/* è°ƒç”¨ä¼šå‘˜å¯†ç æ¯”å¯¹å‡½æ•° */ 
 				{ 
-					printf("\n\n\n\t\t\t   ºË¶ÔÕıÈ·£¡ÕıÔÚ½øÈë»áÔ±½çÃæ...");
+					printf("\n\n\n\t\t\t   æ ¸å¯¹æ­£ç¡®ï¼æ­£åœ¨è¿›å…¥ä¼šå‘˜ç•Œé¢...");
 					clock_delay();
       	       	 	return 1;
 				}
 				else{
-					--k;/*ÃÜÂëÊäÈë´ÎÊıcount*/ 
+					--k;/*å¯†ç è¾“å…¥æ¬¡æ•°count*/ 
 					if(k!=0)
 					{
-						printf("\n\n\n\t\t\t   ÄúµÄÃÜÂëÊäÈëÓĞÎó!»¹ÓĞ%d´Î»ú»áÖØĞÂÊäÈëÃÜÂë£¡",k);
-						printf("\n\t\t\t   ÄúÊÇ·ñÒª¼ÌĞøÊäÈëÃÜÂë(y/n):");
+						printf("\n\n\n\t\t\t   æ‚¨çš„å¯†ç è¾“å…¥æœ‰è¯¯!è¿˜æœ‰%dæ¬¡æœºä¼šé‡æ–°è¾“å…¥å¯†ç ï¼",k);
+						printf("\n\t\t\t   æ‚¨æ˜¯å¦è¦ç»§ç»­è¾“å…¥å¯†ç (y/n):");
 						fflush(stdin);
 						choice1=getch();
 						while(choice1!='Y'&&choice1!='y'&&choice1!='N'&&choice1!='n')
@@ -1417,7 +1417,7 @@ int member_log_in(char account[15])/*»áÔ±µÇÂ¼º¯Êı*/
 							return 0;
 					}
 					else{
-						printf("\n\n\t\t\t   ÄúÊäÈë´ÎÊıÒÑÓÃÍê£¡°´ÈÎÒâ¼üÍË³ö...");
+						printf("\n\n\t\t\t   æ‚¨è¾“å…¥æ¬¡æ•°å·²ç”¨å®Œï¼æŒ‰ä»»æ„é”®é€€å‡º...");
 						fflush(stdin);
    						getch(); 
               	 		return 0;
@@ -1427,7 +1427,7 @@ int member_log_in(char account[15])/*»áÔ±µÇÂ¼º¯Êı*/
 			flag2=1;
    		}
    		else{
-   			printf("\n\n\n\t\t\t  ¸ÃID»¹Î´×¢²á,ÊÇ·ñĞèÒª×¢²á»áÔ±(y/n):");
+   			printf("\n\n\n\t\t\t  è¯¥IDè¿˜æœªæ³¨å†Œ,æ˜¯å¦éœ€è¦æ³¨å†Œä¼šå‘˜(y/n):");
 			choice2=getch();
 			while(choice2!='Y'&&choice2!='y'&&choice2!='N'&&choice2!='n')
       	    	choice2=getch();
@@ -1443,17 +1443,17 @@ int member_log_in(char account[15])/*»áÔ±µÇÂ¼º¯Êı*/
 		}
 }
 
-int compare_password(char *password)/*ÃÜÂë±È¶Ôº¯Êı */ 
+int compare_password(char *password)/*å¯†ç æ¯”å¯¹å‡½æ•° */ 
 {
 	int i=0;
 	char compare[20],c;
 	fflush(stdin);
-	printf("\n\t\t\t   ÃÜÂë(password):");
-	while((c=getch())!=13)//\rÊÇ½«¹â±êÒÆµ½¸ÃĞĞÊ×Î»
+	printf("\n\t\t\t   å¯†ç (password):");
+	while((c=getch())!=13)//\ræ˜¯å°†å…‰æ ‡ç§»åˆ°è¯¥è¡Œé¦–ä½
 	{
 	if(c==8&&i>0)
 	{
-	printf("\b \b");//Çå³ı*ºÅºÍ´í·û
+	printf("\b \b");//æ¸…é™¤*å·å’Œé”™ç¬¦
 	i--;
 	continue;
 	}
@@ -1466,17 +1466,17 @@ int compare_password(char *password)/*ÃÜÂë±È¶Ôº¯Êı */
 	compare[i]='\0';
 	if(strcmp(password,compare)==0)
 		{
-		printf("\a");  //ÏìÁå
+		printf("\a");  //å“é“ƒ
 		return 1;
 		}
 	else
 		{
-		printf("\a");  //ÏìÁå
+		printf("\a");  //å“é“ƒ
 		return 0;
 		}
 }
 
-int check_repeat_ID(char *id_account)/*²éÖØº¯Êı*/ 
+int check_repeat_ID(char *id_account)/*æŸ¥é‡å‡½æ•°*/ 
 {
 	FILE *p2;
 	MEMBER member[100];
@@ -1506,7 +1506,7 @@ int check_repeat_ID(char *id_account)/*²éÖØº¯Êı*/
 		}
 }
 
-void ADMIN_watch_member()/*²é¿´»áÔ±ĞÅÏ¢º¯Êı*/
+void ADMIN_watch_member()/*æŸ¥çœ‹ä¼šå‘˜ä¿¡æ¯å‡½æ•°*/
 {
 	FILE *p2;
 	MEMBER member[100];
@@ -1524,19 +1524,19 @@ void ADMIN_watch_member()/*²é¿´»áÔ±ĞÅÏ¢º¯Êı*/
 	}
 	fclose(p2);
 	
-	printf("ÏµÍ³×¢²áÓÃ»§ÓĞ%dÎ»:",number);
+	printf("ç³»ç»Ÿæ³¨å†Œç”¨æˆ·æœ‰%dä½:",number);
 	printf("\n\n");
-	printf("|-----------------------»áÔ±ĞÅÏ¢-----------------------|\n");
-    printf("|ĞÕÃû      ĞÔ±ğ    ID            ÃÜÂë  	         ÃÜÔ¿  |\n");
+	printf("|-----------------------ä¼šå‘˜ä¿¡æ¯-----------------------|\n");
+    printf("|å§“å      æ€§åˆ«    ID            å¯†ç   	         å¯†é’¥  |\n");
     for(n=0;n<number;n++)
 		printf("|%-10s%-8s%-14s%-16s%-6s%|\n",member[n].name,member[n].sex,
 				member[n].ID,member[n].password,member[n].password_key);
 
-    printf("\n\n°´ÈÎÒâ¼ü·µ»ØÉÏÒ»¼¶²Ëµ¥!\n");
+    printf("\n\næŒ‰ä»»æ„é”®è¿”å›ä¸Šä¸€çº§èœå•!\n");
    	getch();
 } 
 
-void display_memberbook()/*²é¿´ËùÓĞÍ¼Êé½èÔÄĞÅÏ¢º¯Êı*/
+void display_memberbook()/*æŸ¥çœ‹æ‰€æœ‰å›¾ä¹¦å€Ÿé˜…ä¿¡æ¯å‡½æ•°*/
 {
 	FILE *p3;
 	BOOKGRASP bookgrasp[100];
@@ -1553,46 +1553,46 @@ void display_memberbook()/*²é¿´ËùÓĞÍ¼Êé½èÔÄĞÅÏ¢º¯Êı*/
 		booknumber++;
 	}
 	if(bookgrasp[0].price==0.0)
-		printf("µ±Ç°Ã»ÓĞ½èÔÄĞÅÏ¢");
+		printf("å½“å‰æ²¡æœ‰å€Ÿé˜…ä¿¡æ¯");
 	else{ 
-	printf("µ±Ç°¹²ÓĞ%dÎ»»áÔ±½èÔÄÊé¼®¡£",booknumber);
+	printf("å½“å‰å…±æœ‰%dä½ä¼šå‘˜å€Ÿé˜…ä¹¦ç±ã€‚",booknumber);
 	printf("\n");
-   	printf("|---------------------------½èÔÄÍ¼ÊéĞÅÏ¢-----------------------------------|\n");
-   	printf("|±àºÅ  ÊéÃû        ×÷Õß      ³ö°æÉç          Àà±ğ    µ¥¼Û    ½èÔÄID        |\n");
+   	printf("|---------------------------å€Ÿé˜…å›¾ä¹¦ä¿¡æ¯-----------------------------------|\n");
+   	printf("|ç¼–å·  ä¹¦å        ä½œè€…      å‡ºç‰ˆç¤¾          ç±»åˆ«    å•ä»·    å€Ÿé˜…ID        |\n");
    	printf("|                                                                          |\n");
     for(n=0;n<booknumber;n++)		
        	printf("|%-6s%-12s%-10s%-16s%-8s%-8.1f%-14s|\n",bookgrasp[n].number,
 				bookgrasp[n].name,bookgrasp[n].author,bookgrasp[n].press,
 				bookgrasp[n].category,bookgrasp[n].price,bookgrasp[n].account); 
 	} 
-	printf("\n\nÊäÈëÈÎÒâ¼ü·µ»Ø...");
+	printf("\n\nè¾“å…¥ä»»æ„é”®è¿”å›...");
 	fflush(stdin);
 	getch(); 
 } 
 
-void password_circle()/*»­¿òº¯Êı*/ 
+void password_circle()/*ç”»æ¡†å‡½æ•°*/ 
 {
 	system("cls");
 	printf("\n\n\n\t\t\t***================================*** \n");
 	printf("\t\t\t                                   \n");
-	printf("\t\t\t   ÕË»§ (account):");
+	printf("\t\t\t   è´¦æˆ· (account):");
 }
 
-void clock_delay()/*Ê±¼äÑÓÊ±º¯Êı*/
+void clock_delay()/*æ—¶é—´å»¶æ—¶å‡½æ•°*/
 {
 	clock_t tm;
 	tm=clock();
     while(clock()<tm+1000);
 }	
 
-void find_account_circle()/*ÕÒ»ØÕË»§µ¯³ö¿òº¯Êı*/
+void find_account_circle()/*æ‰¾å›è´¦æˆ·å¼¹å‡ºæ¡†å‡½æ•°*/
 {
 	printf("\n\n\n\n");
 	printf("\t\t\t===============H-E-L-P===================\n");
 	printf("\t\t\t|                                       |\n");
-	printf("\t\t\t* ÄúĞè²»ĞèÒªÍ¨¹ıÃÜÔ¿ÕÒ»ØÕË»§£¿(ÊäÈëy/n) *\n");
+	printf("\t\t\t* æ‚¨éœ€ä¸éœ€è¦é€šè¿‡å¯†é’¥æ‰¾å›è´¦æˆ·ï¼Ÿ(è¾“å…¥y/n) *\n");
 	printf("\t\t\t|                                       |\n");
 	printf("\t\t\t=========================================\n");
-	printf("\n\t\t\tÄúµÄÑ¡ÔñÊÇ:");
+	printf("\n\t\t\tæ‚¨çš„é€‰æ‹©æ˜¯:");
 }
 
