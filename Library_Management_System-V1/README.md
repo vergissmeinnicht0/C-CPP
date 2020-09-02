@@ -2,25 +2,7 @@
 
 ### 1. Reasons for this project.
 
-I'm a freshman of Electrical Information Innovation Experiment Class 2016 fall, [Faculty of Electronic Information and Electrical Engineering](http://ee.dlut.edu.cn/en_.htm), [Dalian Univ. of Tech.](http://en.dlut.edu.cn/) and this project is the curriculum design of "C language course". 
-
-I have done it for a week attentively, so I hope you can enjoy it. The screenshots of using are as follows: 
-
-![1](https://raw.githubusercontent.com/fuujiro/pictures/master/LIMS/1.jpeg)
-
-![2](https://raw.githubusercontent.com/fuujiro/pictures/master/LIMS/2.jpeg)
-
-![3](https://raw.githubusercontent.com/fuujiro/pictures/master/LIMS/3.jpeg)
-
-![4](https://raw.githubusercontent.com/fuujiro/pictures/master/LIMS/4.jpeg)
-
-![5](https://raw.githubusercontent.com/fuujiro/pictures/master/LIMS/5.jpeg)
-
-![6](https://raw.githubusercontent.com/fuujiro/pictures/master/LIMS/6.jpeg)
-
-![7](https://raw.githubusercontent.com/fuujiro/pictures/master/LIMS/7.jpeg)
-
-![8](https://raw.githubusercontent.com/fuujiro/pictures/master/LIMS/8.jpeg)
+I am a college student about to enter my junior year. I have sorted out the course design I have done since I entered the university and made it here as an open source to commemorate my university life. Of course, there are other open source code, thanks for letting me learn a lot from it, next I will live up to the youth, brutal growth. I began to prepare for the postgraduate entrance exam!
 
 ### 2. Comments and Considerations
 
@@ -35,9 +17,8 @@ I have done it for a week attentively, so I hope you can enjoy it. The screensho
 ### 4. Support
 
 Compile Enviorment:
-  1. windows 10 && Gcc 4.8 (ensure OK! But have some warnings.)
-  2. Apple macOS 14.1 && clang (sorry, have a little error, you can solve by yourself.)
+  1. windows 10 && Gcc 5.11 (ensure OK! But have some warnings.)
 
-### 5. Joke
+### 5. OriginalCoder
 
 I am actually a easygoing & active boy~! If will, Follow me~~~!
